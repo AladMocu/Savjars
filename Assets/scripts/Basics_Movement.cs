@@ -14,16 +14,19 @@ public class Basics_Movement : MonoBehaviour {
 	private double jumpSleeper;
 
 	private bool salto;
+
+	private float jumpH;
 	// Use this for initialization
 	void Start () {
 		salto = false;
 		jumpSleeper = 0;
+		jumpH = 300;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (jump)&&!salto) {
-			GetComponent<Rigidbody> ().AddForce (new Vector3(0,200,0));
+			GetComponent<Rigidbody> ().AddForce (new Vector3(0,jumpH,0));
 			salto = true;
 
 		}
