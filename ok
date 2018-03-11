@@ -1,0 +1,2029 @@
+[33mcommit 056bd7d54fcdce1c1bf0212bf1c9b6dde24a0219[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: ALBERT ADOLFO MOLANO CUBILLOS <aa.molano@sis.virtual.uniandes.edu.co>
+Date:   Fri Mar 9 13:29:34 2018 -0500
+
+    tutorial base
+
+[1mdiff --git a/Assets/Animations.meta b/Assets/Animations.meta[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ac8d005[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/Animations.meta[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32mfileFormatVersion: 2[m
+[32m+[m[32mguid: bff545825adcd2b4fa6866284a9151c2[m
+[32m+[m[32mfolderAsset: yes[m
+[32m+[m[32mtimeCreated: 1520616602[m
+[32m+[m[32mlicenseType: Free[m
+[32m+[m[32mDefaultImporter:[m
+[32m+[m[32m  userData:[m[41m [m
+[32m+[m[32m  assetBundleName:[m[41m [m
+[32m+[m[32m  assetBundleVariant:[m[41m [m
+[1mdiff --git a/Assets/Animations/DoorOpen.controller b/Assets/Animations/DoorOpen.controller[m
+[1mnew file mode 100644[m
+[1mindex 0000000..dd109d0[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/Animations/DoorOpen.controller[m
+[36m@@ -0,0 +1,41 @@[m
+[32m+[m[32m%YAML 1.1[m
+[32m+[m[32m%TAG !u! tag:unity3d.com,2011:[m
+[32m+[m[32m--- !u!91 &9100000[m
+[32m+[m[32mAnimatorController:[m
+[32m+[m[32m  m_ObjectHideFlags: 0[m
+[32m+[m[32m  m_PrefabParentObject: {fileID: 0}[m
+[32m+[m[32m  m_PrefabInternal: {fileID: 0}[m
+[32m+[m[32m  m_Name: DoorOpen[m
+[32m+[m[32m  serializedVersion: 5[m
+[32m+[m[32m  m_AnimatorParameters: [][m
+[32m+[m[32m  m_AnimatorLayers:[m
+[32m+[m[32m  - serializedVersion: 5[m
+[32m+[m[32m    m_Name: Base Layer[m
+[32m+[m[32m    m_StateMachine: {fileID: 1107078916002937422}[m
+[32m+[m[32m    m_Mask: {fileID: 0}[m
+[32m+[m[32m    m_Motions: [][m
+[32m+[m[32m    m_Behaviours: [][m
+[32m+[m[32m    m_BlendingMode: 0[m
+[32m+[m[32m    m_SyncedLayerIndex: -1[m
+[32m+[m[32m    m_DefaultWeight: 0[m
+[32m+[m[32m    m_IKPass: 0[m
+[32m+[m[32m    m_SyncedLayerAffectsTiming: 0[m
+[32m+[m[32m    m_Controller: {fileID: 9100000}[m
+[32m+[m[32m--- !u!1107 &1107078916002937422[m
+[32m+[m[32mAnimatorStateMachine:[m
+[32m+[m[32m  serializedVersion: 5[m
+[32m+[m[32m  m_ObjectHideFlags: 1[m
+[32m+[m[32m  m_PrefabParentObject: {fileID: 0}[m
+[32m+[m[32m  m_PrefabInternal: {fileID: 0}[m
+[32m+[m[32m  m_Name: Base Layer[m
+[32m+[m[32m  m_ChildStates: [][m
+[32m+[m[32m  m_ChildStateMachines: [][m
+[32m+[m[32m  m_AnyStateTransitions: [][m
+[32m+[m[32m  m_EntryTransitions: [][m
+[32m+[m[32m  m_StateMachineTransitions: {}[m
+[32m+[m[32m  m_StateMachineBehaviours: [][m
+[32m+[m[32m  m_AnyStatePosition: {x: 50, y: 20, z: 0}[m
+[32m+[m[32m  m_EntryPosition: {x: 50, y: 120, z: 0}[m
+[32m+[m[32m  m_ExitPosition: {x: 800, y: 120, z: 0}[m
+[32m+[m[32m  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}[m
+[32m+[m[32m  m_DefaultState: {fileID: 0}[m
+[1mdiff --git a/Assets/Animations/DoorOpen.controller.meta b/Assets/Animations/DoorOpen.controller.meta[m
+[1mnew file mode 100644[m
+[1mindex 0000000..89e63f0[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/Animations/DoorOpen.controller.meta[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32mfileFormatVersion: 2[m
+[32m+[m[32mguid: 1eb34836444d3354ca2afa1e1b498a1b[m
+[32m+[m[32mtimeCreated: 1520616682[m
+[32m+[m[32mlicenseType: Free[m
+[32m+[m[32mNativeFormatImporter:[m
+[32m+[m[32m  mainObjectFileID: 9100000[m
+[32m+[m[32m  userData:[m[41m [m
+[32m+[m[32m  assetBundleName:[m[41m [m
+[32m+[m[32m  assetBundleVariant:[m[41m [m
+[1mdiff --git a/Assets/Animations/Door_Open.anim b/Assets/Animations/Door_Open.anim[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9bd4056[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/Animations/Door_Open.anim[m
+[36m@@ -0,0 +1,138 @@[m
+[32m+[m[32m%YAML 1.1[m
+[32m+[m[32m%TAG !u! tag:unity3d.com,2011:[m
+[32m+[m[32m--- !u!74 &7400000[m
+[32m+[m[32mAnimationClip:[m
+[32m+[m[32m  m_ObjectHideFlags: 0[m
+[32m+[m[32m  m_PrefabParentObject: {fileID: 0}[m
+[32m+[m[32m  m_PrefabInternal: {fileID: 0}[m
+[32m+[m[32m  m_Name: Door_Open[m
+[32m+[m[32m  serializedVersion: 6[m
+[32m+[m[32m  m_Legacy: 1[m
+[32m+[m[32m  m_Compressed: 0[m
+[32m+[m[32m  m_UseHighQualityCurve: 1[m
+[32m+[m[32m  m_RotationCurves: [][m
+[32m+[m[32m  m_CompressedRotationCurves: [][m
+[32m+[m[32m  m_EulerCurves: [][m
+[32m+[m[32m  m_PositionCurves:[m
+[32m+[m[32m  - curve:[m
+[32m+[m[32m      serializedVersion: 2[m
+[32m+[m[32m      m_Curve:[m
+[32m+[m[32m      - serializedVersion: 2[m
+[32m+[m[32m        time: 0[m
+[32m+[m[32m        value: {x: 4.78, y: 1.0021873, z: -30.6}[m
+[32m+[m[32m        inSlope: {x: 0, y: 0, z: 0}[m
+[32m+[m[32m        outSlope: {x: 0, y: 0, z: 0}[m
+[32m+[m[32m        tangentMode: 0[m
+[32m+[m[32m      - serializedVersion: 2[m
+[32m+[m[32m        time: 1[m
+[32m+[m[32m        value: {x: 4.78, y: -14.33, z: -30.6}[m
+[32m+[m[32m        inSlope: {x: 0, y: 0, z: 0}[m
+[32m+[m[32m        outSlope: {x: 0, y: 0, z: 0}[m
+[32m+[m[32m        tangentMode: 0[m
+[32m+[m[32m      m_PreInfinity: 2[m
+[32m+[m[32m      m_PostInfinity: 2[m
+[32m+[m[32m      m_RotationOrder: 4[m
+[32m+[m[32m    path:[m[41m [m
+[32m+[m[32m  m_ScaleCurves: [][m
+[32m+[m[32m  m_FloatCurves: [][m
+[32m+[m[32m  m_PPtrCurves: [][m
+[32m+[m[32m  m_SampleRate: 60[m
+[32m+[m[32m  m_WrapMode: 0[m
+[32m+[m[32m  m_Bounds:[m
+[32m+[m[32m    m_Center: {x: 0, y: 0, z: 0}[m
+[32m+[m[32m    m_Extent: {x: 0, y: 0, z: 0}[m
+[32m+[m[32m  m_ClipBindingConstant:[m
+[32m+[m[32m    genericBindings: [][m
+[32m+[m[32m    pptrCurveMapping: [][m
+[32m+[m[32m  m_AnimationClipSettings:[m
+[32m+[m[32m    serializedVersion: 2[m
+[32m+[m[32m    m_AdditiveReferencePoseClip: {fileID: 0}[m
+[32m+[m[32m    m_AdditiveReferencePoseTime: 0[m
+[32m+[m[32m    m_StartTime: 0[m
+[32m+[m[32m    m_StopTime: 1[m
+[32m+[m[32m    m_OrientationOffsetY: 0[m
+[32m+[m[32m    m_Level: 0[m
+[32m+[m[32m    m_CycleOffset: 0[m
+[32m+[m[32m    m_HasAdditiveReferencePose: 0[m
+[32m+[m[32m    m_LoopTime: 1[m
+[32m+[m[32m    m_LoopBlend: 0[m
+[32m+[m[32m    m_LoopBlendOrientation: 0[m
+[32m+[m[32m    m_LoopBlendPositionY: 0[m
+[32m+[m[32m    m_LoopBlendPositionXZ: 0[m
+[32m+[m[32m    m_KeepOriginalOrientation: 0[m
+[32m+[m[32m    m_KeepOriginalPositionY: 1[m
+[32m+[m[32m    m_KeepOriginalPositionXZ: 0[m
+[32m+[m[32m    m_HeightFromFeet: 0[m
+[32m+[m[32m    m_Mirror: 0[m
+[32m+[m[32m  m_EditorCurves:[m
+[32m+[m[32m  - curve:[m
+[32m+[m[32m      serializedVersion: 2[m
+[32m+[m[32m      m_Curve:[m
+[32m+[m[32m      - serializedVersion: 2[m
+[32m+[m[32m        time: 0[m
+[32m+[m[32m        value: 4.78[m
+[32m+[m[32m        inSlope: 0[m
+[32m+[m[32m        outSlope: 0[m
+[32m+[m[32m        tangentMode: 136[m
+[32m+[m[32m      - serializedVersion: 2[m
+[32m+[m[32m        time: 1[m
+[32m+[m[32m        value: 4.78[m
+[32m+[m[32m        inSlope: 0[m
+[32m+[m[32m        outSlope: 0[m
+[32m+[m[32m        tangentMode: 136[m
+[32m+[m[32m      m_PreInfinity: 2[m
+[32m+[m[32m      m_PostInfinity: 2[m
+[32m+[m[32m      m_RotationOrder: 4[m
+[32m+[m[32m    attribute: m_LocalPosition.x[m
+[32m+[m[32m    path:[m[41m [m
+[32m+[m[32m    classID: 4[m
+[32m+[m[32m    script: {fileID: 0}[m
+[32m+[m[32m  - curve:[m
+[32m+[m[32m      serializedVersion: 2[m
+[32m+[m[32m      m_Curve:[m
+[32m+[m[32m      - serializedVersion: 2[m
+[32m+[m[32m        time: 0[m
+[32m+[m[32m        value: 1.0021873[m
+[32m+[m[32m        inSlope: 0[m
+[32m+[m[32m        outSlope: 0[m
+[32m+[m[32m        tangentMode: 136[m
+[32m+[m[32m      - serializedVersion: 2[m
+[32m+[m[32m        time: 1[m
+[32m+[m[32m        value: -14.33[m
+[32m+[m[32m        inSlope: 0[m
+[32m+[m[32m        outSlope: 0[m
+[32m+[m[32m        tangentMode: 136[m
+[32m+[m[32m      m_PreInfinity: 2[m
+[32m+[m[32m      m_PostInfinity: 2[m
+[32m+[m[32m      m_RotationOrder: 4[m
+[32m+[m[32m    attribute: m_LocalPosition.y[m
+[32m+[m[32m    path:[m[41m [m
+[32m+[m[32m    classID: 4[m
+[32m+[m[32m    script: {fileID: 0}[m
+[32m+[m[32m  - curve:[m
+[32m+[m[32m      serializedVersion: 2[m
+[32m+[m[32m      m_Curve:[m
+[32m+[m[32m      - serializedVersion: 2[m
+[32m+[m[32m        time: 0[m
+[32m+[m[32m        value: -30.6[m
+[32m+[m[32m        inSlope: 0[m
+[32m+[m[32m        outSlope: 0[m
+[32m+[m[32m        tangentMode: 136[m
+[32m+[m[32m      - serializedVersion: 2[m
+[32m+[m[32m        time: 1[m
+[32m+[m[32m        value: -30.6[m
+[32m+[m[32m        inSlope: 0[m
+[32m+[m[32m        outSlope: 0[m
+[32m+[m[32m        tangentMode: 136[m
+[32m+[m[32m      m_PreInfinity: 2[m
+[32m+[m[32m      m_PostInfinity: 2[m
+[32m+[m[32m      m_RotationOrder: 4[m
+[32m+[m[32m    attribute: m_LocalPosition.z[m
+[32m+[m[32m    path:[m[41m [m
+[32m+[m[32m    classID: 4[m
+[32m+[m[32m    script: {fileID: 0}[m
+[32m+[m[32m  m_EulerEditorCurves: [][m
+[32m+[m[32m  m_HasGenericRootTransform: 0[m
+[32m+[m[32m  m_HasMotionFloatCurves: 0[m
+[32m+[m[32m  m_GenerateMotionCurves: 0[m
+[32m+[m[32m  m_Events: [][m
+[1mdiff --git a/Assets/Animations/Door_Open.anim.meta b/Assets/Animations/Door_Open.anim.meta[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8da0eef[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/Animations/Door_Open.anim.meta[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32mfileFormatVersion: 2[m
+[32m+[m[32mguid: 90a5c0d362edc3f49a96a14a3914c520[m
+[32m+[m[32mtimeCreated: 1520616647[m
+[32m+[m[32mlicenseType: Free[m
+[32m+[m[32mNativeFormatImporter:[m
+[32m+[m[32m  mainObjectFileID: 7400000[m
+[32m+[m[32m  userData:[m[41m [m
+[32m+[m[32m  assetBundleName:[m[41m [m
+[32m+[m[32m  assetBundleVariant:[m[41m [m
+[1mdiff --git a/Assets/Min Scene.unity b/Assets/Min Scene.unity[m
+[1mindex 79b7570..6d43c70 100644[m
+[1m--- a/Assets/Min Scene.unity[m	
+[1m+++ b/Assets/Min Scene.unity[m	
+[36m@@ -38,7 +38,7 @@[m [mRenderSettings:[m
+   m_ReflectionIntensity: 1[m
+   m_CustomReflection: {fileID: 0}[m
+   m_Sun: {fileID: 0}[m
+[31m-  m_IndirectSpecularColor: {r: 0.45102787, g: 0.49947977, b: 0.56680405, a: 1}[m
+[32m+[m[32m  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}[m
+ --- !u!157 &3[m
+ LightmapSettings:[m
+   m_ObjectHideFlags: 0[m
+[36m@@ -122,11 +122,9 @@[m [mGameObject:[m
+   - component: {fileID: 24953706}[m
+   - component: {fileID: 24953711}[m
+   - component: {fileID: 24953712}[m
+[31m-  - component: {fileID: 24953714}[m
+[31m-  - component: {fileID: 24953713}[m
+   m_Layer: 0[m
+   m_Name: Player 1[m
+[31m-  m_TagString: Untagged[m
+[32m+[m[32m  m_TagString: Player[m
+   m_Icon: {fileID: 0}[m
+   m_NavMeshLayer: 0[m
+   m_StaticEditorFlags: 0[m
+[36m@@ -209,7 +207,7 @@[m [mTransform:[m
+   m_Children:[m
+   - {fileID: 1958744017}[m
+   m_Father: {fileID: 0}[m
+[31m-  m_RootOrder: 2[m
+[32m+[m[32m  m_RootOrder: 1[m
+   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}[m
+ --- !u!114 &24953711[m
+ MonoBehaviour:[m
+[36m@@ -223,10 +221,10 @@[m [mMonoBehaviour:[m
+   m_Name: [m
+   m_EditorClassIdentifier: [m
+   jump: 32[m
+[31m-  forward: 119[m
+[31m-  back: 115[m
+[31m-  left: 97[m
+[31m-  rigth: 100[m
+[32m+[m[32m  forward: 100[m
+[32m+[m[32m  back: 97[m
+[32m+[m[32m  left: 119[m
+[32m+[m[32m  rigth: 115[m
+   step: 0.1[m
+ --- !u!114 &24953712[m
+ MonoBehaviour:[m
+[36m@@ -242,42 +240,6 @@[m [mMonoBehaviour:[m
+   camPlayer1: {fileID: 1958744021}[m
+   camPlater2: {fileID: 1386911734}[m
+   change: 9[m
+[31m---- !u!114 &24953713[m
+[31m-MonoBehaviour:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 24953705}[m
+[31m-  m_Enabled: 1[m
+[31m-  m_EditorHideFlags: 0[m
+[31m-  m_Script: {fileID: 11500000, guid: 1d3aca7aa4d8bea4097ae727154893ce, type: 3}[m
+[31m-  m_Name: [m
+[31m-  m_EditorClassIdentifier: [m
+[31m-  maxHealth: 100[m
+[31m-  invulnerabilityTime: 0.5[m
+[31m-  maxShield: 25[m
+[31m-  regenShieldTimerMax: 1[m
+[31m-  explosionParticles: {fileID: 0}[m
+[31m-  healthBar: {fileID: 0}[m
+[31m-  shieldBar: {fileID: 0}[m
+[31m---- !u!114 &24953714[m
+[31m-MonoBehaviour:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 24953705}[m
+[31m-  m_Enabled: 1[m
+[31m-  m_EditorHideFlags: 0[m
+[31m-  m_Script: {fileID: 11500000, guid: 1d3aca7aa4d8bea4097ae727154893ce, type: 3}[m
+[31m-  m_Name: [m
+[31m-  m_EditorClassIdentifier: [m
+[31m-  maxHealth: 100[m
+[31m-  invulnerabilityTime: 0.5[m
+[31m-  maxShield: 25[m
+[31m-  regenShieldTimerMax: 1[m
+[31m-  explosionParticles: {fileID: 0}[m
+[31m-  healthBar: {fileID: 0}[m
+[31m-  shieldBar: {fileID: 0}[m
+ --- !u!1 &124851303[m
+ GameObject:[m
+   m_ObjectHideFlags: 0[m
+[36m@@ -293,7 +255,7 @@[m [mGameObject:[m
+   - component: {fileID: 124851304}[m
+   m_Layer: 0[m
+   m_Name: Player 2[m
+[31m-  m_TagString: Untagged[m
+[32m+[m[32m  m_TagString: Player[m
+   m_Icon: {fileID: 0}[m
+   m_NavMeshLayer: 0[m
+   m_StaticEditorFlags: 0[m
+[36m@@ -457,64 +419,33 @@[m [mTransform:[m
+   m_Father: {fileID: 0}[m
+   m_RootOrder: 4[m
+   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}[m
+[31m---- !u!4 &634342083 stripped[m
+[31m-Transform:[m
+[31m-  m_PrefabParentObject: {fileID: 400002, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[31m-  m_PrefabInternal: {fileID: 959557893}[m
+[31m---- !u!1 &685213386[m
+[32m+[m[32m--- !u!1 &296480661[m
+ GameObject:[m
+   m_ObjectHideFlags: 0[m
+   m_PrefabParentObject: {fileID: 0}[m
+   m_PrefabInternal: {fileID: 0}[m
+   serializedVersion: 5[m
+   m_Component:[m
+[31m-  - component: {fileID: 685213387}[m
+[31m-  - component: {fileID: 685213391}[m
+[31m-  - component: {fileID: 685213390}[m
+[31m-  - component: {fileID: 685213389}[m
+[31m-  - component: {fileID: 685213388}[m
+[32m+[m[32m  - component: {fileID: 296480665}[m
+[32m+[m[32m  - component: {fileID: 296480664}[m
+[32m+[m[32m  - component: {fileID: 296480662}[m
+[32m+[m[32m  - component: {fileID: 296480666}[m
+[32m+[m[32m  - component: {fileID: 296480667}[m
+[32m+[m[32m  - component: {fileID: 296480663}[m
+   m_Layer: 0[m
+[31m-  m_Name: e[m
+[32m+[m[32m  m_Name: Capsule[m
+   m_TagString: Untagged[m
+   m_Icon: {fileID: 0}[m
+   m_NavMeshLayer: 0[m
+   m_StaticEditorFlags: 0[m
+   m_IsActive: 1[m
+[31m---- !u!4 &685213387[m
+[31m-Transform:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 685213386}[m
+[31m-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}[m
+[31m-  m_LocalPosition: {x: -1.02, y: 18.7, z: 19.78}[m
+[31m-  m_LocalScale: {x: 1, y: 34.58014, z: 39.72142}[m
+[31m-  m_Children: [][m
+[31m-  m_Father: {fileID: 634342083}[m
+[31m-  m_RootOrder: 2[m
+[31m-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}[m
+[31m---- !u!54 &685213388[m
+[31m-Rigidbody:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 685213386}[m
+[31m-  serializedVersion: 2[m
+[31m-  m_Mass: 1[m
+[31m-  m_Drag: 0[m
+[31m-  m_AngularDrag: 0.05[m
+[31m-  m_UseGravity: 0[m
+[31m-  m_IsKinematic: 1[m
+[31m-  m_Interpolate: 0[m
+[31m-  m_Constraints: 0[m
+[31m-  m_CollisionDetection: 0[m
+[31m---- !u!23 &685213389[m
+[32m+[m[32m--- !u!23 &296480662[m
+ MeshRenderer:[m
+   m_ObjectHideFlags: 0[m
+   m_PrefabParentObject: {fileID: 0}[m
+   m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 685213386}[m
+[31m-  m_Enabled: 0[m
+[32m+[m[32m  m_GameObject: {fileID: 296480661}[m
+[32m+[m[32m  m_Enabled: 1[m
+   m_CastShadows: 1[m
+   m_ReceiveShadows: 1[m
+   m_MotionVectors: 1[m
+[36m@@ -540,112 +471,215 @@[m [mMeshRenderer:[m
+   m_SortingLayerID: 0[m
+   m_SortingLayer: 0[m
+   m_SortingOrder: 0[m
+[31m---- !u!65 &685213390[m
+[32m+[m[32m--- !u!65 &296480663[m
+ BoxCollider:[m
+   m_ObjectHideFlags: 0[m
+   m_PrefabParentObject: {fileID: 0}[m
+   m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 685213386}[m
+[32m+[m[32m  m_GameObject: {fileID: 296480661}[m
+   m_Material: {fileID: 0}[m
+[31m-  m_IsTrigger: 0[m
+[32m+[m[32m  m_IsTrigger: 1[m
+   m_Enabled: 1[m
+   serializedVersion: 2[m
+[31m-  m_Size: {x: 1, y: 1, z: 1}[m
+[31m-  m_Center: {x: 0, y: 0, z: 0}[m
+[31m---- !u!33 &685213391[m
+[32m+[m[32m  m_Size: {x: 1, y: 0.87597245, z: 1}[m
+[32m+[m[32m  m_Center: {x: 0, y: 0.56201446, z: 0}[m
+[32m+[m[32m--- !u!33 &296480664[m
+ MeshFilter:[m
+   m_ObjectHideFlags: 0[m
+   m_PrefabParentObject: {fileID: 0}[m
+   m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 685213386}[m
+[31m-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}[m
+[31m---- !u!1001 &959557893[m
+[32m+[m[32m  m_GameObject: {fileID: 296480661}[m
+[32m+[m[32m  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}[m
+[32m+[m[32m--- !u!4 &296480665[m
+[32m+[m[32mTransform:[m
+[32m+[m[32m  m_ObjectHideFlags: 0[m
+[32m+[m[32m  m_PrefabParentObject: {fileID: 0}[m
+[32m+[m[32m  m_PrefabInternal: {fileID: 0}[m
+[32m+[m[32m  m_GameObject: {fileID: 296480661}[m
+[32m+[m[32m  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}[m
+[32m+[m[32m  m_LocalPosition: {x: 3.5, y: 1.2, z: -13.86}[m
+[32m+[m[32m  m_LocalScale: {x: 5, y: 0.20958763, z: 5}[m
+[32m+[m[32m  m_Children: [][m
+[32m+[m[32m  m_Father: {fileID: 0}[m
+[32m+[m[32m  m_RootOrder: 5[m
+[32m+[m[32m  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}[m
+[32m+[m[32m--- !u!95 &296480666[m
+[32m+[m[32mAnimator:[m
+[32m+[m[32m  serializedVersion: 3[m
+[32m+[m[32m  m_ObjectHideFlags: 0[m
+[32m+[m[32m  m_PrefabParentObject: {fileID: 0}[m
+[32m+[m[32m  m_PrefabInternal: {fileID: 0}[m
+[32m+[m[32m  m_GameObject: {fileID: 296480661}[m
+[32m+[m[32m  m_Enabled: 1[m
+[32m+[m[32m  m_Avatar: {fileID: 0}[m
+[32m+[m[32m  m_Controller: {fileID: 9100000, guid: 1eb34836444d3354ca2afa1e1b498a1b, type: 2}[m
+[32m+[m[32m  m_CullingMode: 0[m
+[32m+[m[32m  m_UpdateMode: 0[m
+[32m+[m[32m  m_ApplyRootMotion: 0[m
+[32m+[m[32m  m_LinearVelocityBlending: 0[m
+[32m+[m[32m  m_WarningMessage:[m[41m [m
+[32m+[m[32m  m_HasTransformHierarchy: 1[m
+[32m+[m[32m  m_AllowConstantClipSamplingOptimization: 1[m
+[32m+[m[32m--- !u!114 &296480667[m
+[32m+[m[32mMonoBehaviour:[m
+[32m+[m[32m  m_ObjectHideFlags: 0[m
+[32m+[m[32m  m_PrefabParentObject: {fileID: 0}[m
+[32m+[m[32m  m_PrefabInternal: {fileID: 0}[m
+[32m+[m[32m  m_GameObject: {fileID: 296480661}[m
+[32m+[m[32m  m_Enabled: 1[m
+[32m+[m[32m  m_EditorHideFlags: 0[m
+[32m+[m[32m  m_Script: {fileID: 11500000, guid: 6c8af2094e9360a4bbb77b5f19ea3dd3, type: 3}[m
+[32m+[m[32m  m_Name:[m[41m [m
+[32m+[m[32m  m_EditorClassIdentifier:[m[41m [m
+[32m+[m[32m  animator: {fileID: 0}[m
+[32m+[m[32m--- !u!1001 &669573307[m
+ Prefab:[m
+   m_ObjectHideFlags: 0[m
+   serializedVersion: 2[m
+   m_Modification:[m
+     m_TransformParent: {fileID: 0}[m
+     m_Modifications:[m
+[31m-    - target: {fileID: 400002, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: ee5d76bba41dd604b9f6bae081102539, type: 3}[m
+       propertyPath: m_LocalPosition.x[m
+[31m-      value: 0[m
+[32m+[m[32m      value: 4.78[m
+       objectReference: {fileID: 0}[m
+[31m-    - target: {fileID: 400002, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: ee5d76bba41dd604b9f6bae081102539, type: 3}[m
+       propertyPath: m_LocalPosition.y[m
+[31m-      value: 0[m
+[32m+[m[32m      value: 1.0021873[m
+       objectReference: {fileID: 0}[m
+[31m-    - target: {fileID: 400002, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: ee5d76bba41dd604b9f6bae081102539, type: 3}[m
+       propertyPath: m_LocalPosition.z[m
+[31m-      value: 0[m
+[32m+[m[32m      value: -30.6[m
+       objectReference: {fileID: 0}[m
+[31m-    - target: {fileID: 400002, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: ee5d76bba41dd604b9f6bae081102539, type: 3}[m
+       propertyPath: m_LocalRotation.x[m
+[31m-      value: 0[m
+[32m+[m[32m      value: -0.5[m
+       objectReference: {fileID: 0}[m
+[31m-    - target: {fileID: 400002, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: ee5d76bba41dd604b9f6bae081102539, type: 3}[m
+       propertyPath: m_LocalRotation.y[m
+[31m-      value: 0[m
+[32m+[m[32m      value: 0.5[m
+       objectReference: {fileID: 0}[m
+[31m-    - target: {fileID: 400002, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: ee5d76bba41dd604b9f6bae081102539, type: 3}[m
+       propertyPath: m_LocalRotation.z[m
+[31m-      value: 0[m
+[32m+[m[32m      value: 0.5[m
+       objectReference: {fileID: 0}[m
+[31m-    - target: {fileID: 400002, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: ee5d76bba41dd604b9f6bae081102539, type: 3}[m
+       propertyPath: m_LocalRotation.w[m
+[31m-      value: 1[m
+[32m+[m[32m      value: 0.5[m
+       objectReference: {fileID: 0}[m
+[31m-    - target: {fileID: 400002, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: ee5d76bba41dd604b9f6bae081102539, type: 3}[m
+       propertyPath: m_RootOrder[m
+[31m-      value: 0[m
+[32m+[m[32m      value: 2[m
+       objectReference: {fileID: 0}[m
+[31m-    - target: {fileID: 400002, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[31m-      propertyPath: m_LocalEulerAnglesHint.y[m
+[31m-      value: 0[m
+[32m+[m[32m    - target: {fileID: 400000, guid: ee5d76bba41dd604b9f6bae081102539, type: 3}[m
+[32m+[m[32m      propertyPath: m_LocalEulerAnglesHint.x[m
+[32m+[m[32m      value: -90.00001[m
+[32m+[m[32m      objectReference: {fileID: 0}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: ee5d76bba41dd604b9f6bae081102539, type: 3}[m
+[32m+[m[32m      propertyPath: m_LocalEulerAnglesHint.z[m
+[32m+[m[32m      value: 90[m
+       objectReference: {fileID: 0}[m
+[31m-    - target: {fileID: 400000, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[32m+[m[32m    m_RemovedComponents: [][m
+[32m+[m[32m  m_ParentPrefab: {fileID: 100100000, guid: ee5d76bba41dd604b9f6bae081102539, type: 3}[m
+[32m+[m[32m  m_IsPrefabParent: 0[m
+[32m+[m[32m--- !u!1 &669573308 stripped[m
+[32m+[m[32mGameObject:[m
+[32m+[m[32m  m_PrefabParentObject: {fileID: 100000, guid: ee5d76bba41dd604b9f6bae081102539, type: 3}[m
+[32m+[m[32m  m_PrefabInternal: {fileID: 669573307}[m
+[32m+[m[32m--- !u!111 &669573309[m
+[32m+[m[32mAnimation:[m
+[32m+[m[32m  m_ObjectHideFlags: 0[m
+[32m+[m[32m  m_PrefabParentObject: {fileID: 0}[m
+[32m+[m[32m  m_PrefabInternal: {fileID: 0}[m
+[32m+[m[32m  m_GameObject: {fileID: 669573308}[m
+[32m+[m[32m  m_Enabled: 1[m
+[32m+[m[32m  serializedVersion: 3[m
+[32m+[m[32m  m_Animation: {fileID: 0}[m
+[32m+[m[32m  m_Animations:[m
+[32m+[m[32m  - {fileID: 7400000, guid: 90a5c0d362edc3f49a96a14a3914c520, type: 2}[m
+[32m+[m[32m  m_WrapMode: 0[m
+[32m+[m[32m  m_PlayAutomatically: 0[m
+[32m+[m[32m  m_AnimatePhysics: 1[m
+[32m+[m[32m  m_CullingType: 0[m
+[32m+[m[32m--- !u!1001 &771942040[m
+[32m+[m[32mPrefab:[m
+[32m+[m[32m  m_ObjectHideFlags: 0[m
+[32m+[m[32m  serializedVersion: 2[m
+[32m+[m[32m  m_Modification:[m
+[32m+[m[32m    m_TransformParent: {fileID: 0}[m
+[32m+[m[32m    m_Modifications:[m
+[32m+[m[32m    - target: {fileID: 400000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+       propertyPath: m_LocalPosition.x[m
+[31m-      value: 0.12[m
+[32m+[m[32m      value: 5.6[m
+       objectReference: {fileID: 0}[m
+[31m-    - target: {fileID: 400000, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+       propertyPath: m_LocalPosition.y[m
+[31m-      value: -0.05[m
+[32m+[m[32m      value: 0[m
+[32m+[m[32m      objectReference: {fileID: 0}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+[32m+[m[32m      propertyPath: m_LocalPosition.z[m
+[32m+[m[32m      value: -56.8[m
+[32m+[m[32m      objectReference: {fileID: 0}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+[32m+[m[32m      propertyPath: m_LocalRotation.x[m
+[32m+[m[32m      value: -0.49991274[m
+[32m+[m[32m      objectReference: {fileID: 0}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+[32m+[m[32m      propertyPath: m_LocalRotation.y[m
+[32m+[m[32m      value: -0.50008726[m
+[32m+[m[32m      objectReference: {fileID: 0}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+[32m+[m[32m      propertyPath: m_LocalRotation.z[m
+[32m+[m[32m      value: -0.49991274[m
+       objectReference: {fileID: 0}[m
+[31m-    - target: {fileID: 2300000, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[31m-      propertyPath: m_Materials.Array.data[0][m
+[31m-      value: [m
+[31m-      objectReference: {fileID: 2100000, guid: a073b30e9bd47ae41a85050d6e6cd609, type: 2}[m
+[31m-    - target: {fileID: 400000, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+[32m+[m[32m      propertyPath: m_LocalRotation.w[m
+[32m+[m[32m      value: 0.50008726[m
+[32m+[m[32m      objectReference: {fileID: 0}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+       propertyPath: m_RootOrder[m
+       value: 0[m
+       objectReference: {fileID: 0}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+[32m+[m[32m      propertyPath: m_LocalEulerAnglesHint.x[m
+[32m+[m[32m      value: -89.98[m
+[32m+[m[32m      objectReference: {fileID: 0}[m
+[32m+[m[32m    - target: {fileID: 400000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+[32m+[m[32m      propertyPath: m_LocalEulerAnglesHint.y[m
+[32m+[m[32m      value: -90[m
+[32m+[m[32m      objectReference: {fileID: 0}[m
+[32m+[m[32m    - target: {fileID: 100000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+[32m+[m[32m      propertyPath: m_Name[m
+[32m+[m[32m      value: TuTo_world[m
+[32m+[m[32m      objectReference: {fileID: 0}[m
+     m_RemovedComponents: [][m
+[31m-  m_ParentPrefab: {fileID: 100100000, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[32m+[m[32m  m_ParentPrefab: {fileID: 100100000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+   m_IsPrefabParent: 0[m
+[31m---- !u!1 &1011197944 stripped[m
+[32m+[m[32m--- !u!1 &1046516469 stripped[m
+ GameObject:[m
+[31m-  m_PrefabParentObject: {fileID: 100000, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[31m-  m_PrefabInternal: {fileID: 959557893}[m
+[31m---- !u!54 &1011197946[m
+[32m+[m[32m  m_PrefabParentObject: {fileID: 100000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+[32m+[m[32m  m_PrefabInternal: {fileID: 771942040}[m
+[32m+[m[32m--- !u!54 &1046516473[m
+ Rigidbody:[m
+   m_ObjectHideFlags: 0[m
+   m_PrefabParentObject: {fileID: 0}[m
+   m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 1011197944}[m
+[32m+[m[32m  m_GameObject: {fileID: 1046516469}[m
+   serializedVersion: 2[m
+   m_Mass: 1[m
+   m_Drag: 0[m
+   m_AngularDrag: 0.05[m
+[31m-  m_UseGravity: 0[m
+[32m+[m[32m  m_UseGravity: 1[m
+   m_IsKinematic: 1[m
+   m_Interpolate: 0[m
+   m_Constraints: 0[m
+   m_CollisionDetection: 0[m
+[31m---- !u!64 &1011197949[m
+[32m+[m[32m--- !u!64 &1046516474[m
+ MeshCollider:[m
+   m_ObjectHideFlags: 0[m
+   m_PrefabParentObject: {fileID: 0}[m
+   m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 1011197944}[m
+[32m+[m[32m  m_GameObject: {fileID: 1046516469}[m
+   m_Material: {fileID: 0}[m
+   m_IsTrigger: 0[m
+   m_Enabled: 1[m
+[36m@@ -653,105 +687,7 @@[m [mMeshCollider:[m
+   m_Convex: 0[m
+   m_InflateMesh: 0[m
+   m_SkinWidth: 0.01[m
+[31m-  m_Mesh: {fileID: 4300000, guid: 3c1d0e1ab5104ff4a8fff57e57f9e66c, type: 3}[m
+[31m---- !u!1 &1331007061[m
+[31m-GameObject:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  serializedVersion: 5[m
+[31m-  m_Component:[m
+[31m-  - component: {fileID: 1331007062}[m
+[31m-  - component: {fileID: 1331007066}[m
+[31m-  - component: {fileID: 1331007065}[m
+[31m-  - component: {fileID: 1331007064}[m
+[31m-  - component: {fileID: 1331007063}[m
+[31m-  m_Layer: 0[m
+[31m-  m_Name: Cube[m
+[31m-  m_TagString: Untagged[m
+[31m-  m_Icon: {fileID: 0}[m
+[31m-  m_NavMeshLayer: 0[m
+[31m-  m_StaticEditorFlags: 0[m
+[31m-  m_IsActive: 1[m
+[31m---- !u!4 &1331007062[m
+[31m-Transform:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 1331007061}[m
+[31m-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}[m
+[31m-  m_LocalPosition: {x: -20.6, y: 18.7, z: 0.52}[m
+[31m-  m_LocalScale: {x: 1, y: 34.580135, z: 39.72142}[m
+[31m-  m_Children: [][m
+[31m-  m_Father: {fileID: 634342083}[m
+[31m-  m_RootOrder: 1[m
+[31m-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}[m
+[31m---- !u!54 &1331007063[m
+[31m-Rigidbody:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 1331007061}[m
+[31m-  serializedVersion: 2[m
+[31m-  m_Mass: 1[m
+[31m-  m_Drag: 0[m
+[31m-  m_AngularDrag: 0.05[m
+[31m-  m_UseGravity: 0[m
+[31m-  m_IsKinematic: 1[m
+[31m-  m_Interpolate: 0[m
+[31m-  m_Constraints: 0[m
+[31m-  m_CollisionDetection: 0[m
+[31m---- !u!23 &1331007064[m
+[31m-MeshRenderer:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 1331007061}[m
+[31m-  m_Enabled: 0[m
+[31m-  m_CastShadows: 1[m
+[31m-  m_ReceiveShadows: 1[m
+[31m-  m_MotionVectors: 1[m
+[31m-  m_LightProbeUsage: 1[m
+[31m-  m_ReflectionProbeUsage: 1[m
+[31m-  m_Materials:[m
+[31m-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}[m
+[31m-  m_StaticBatchInfo:[m
+[31m-    firstSubMesh: 0[m
+[31m-    subMeshCount: 0[m
+[31m-  m_StaticBatchRoot: {fileID: 0}[m
+[31m-  m_ProbeAnchor: {fileID: 0}[m
+[31m-  m_LightProbeVolumeOverride: {fileID: 0}[m
+[31m-  m_ScaleInLightmap: 1[m
+[31m-  m_PreserveUVs: 1[m
+[31m-  m_IgnoreNormalsForChartDetection: 0[m
+[31m-  m_ImportantGI: 0[m
+[31m-  m_SelectedEditorRenderState: 3[m
+[31m-  m_MinimumChartSize: 4[m
+[31m-  m_AutoUVMaxDistance: 0.5[m
+[31m-  m_AutoUVMaxAngle: 89[m
+[31m-  m_LightmapParameters: {fileID: 0}[m
+[31m-  m_SortingLayerID: 0[m
+[31m-  m_SortingLayer: 0[m
+[31m-  m_SortingOrder: 0[m
+[31m---- !u!65 &1331007065[m
+[31m-BoxCollider:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 1331007061}[m
+[31m-  m_Material: {fileID: 0}[m
+[31m-  m_IsTrigger: 0[m
+[31m-  m_Enabled: 1[m
+[31m-  serializedVersion: 2[m
+[31m-  m_Size: {x: 1, y: 1, z: 1}[m
+[31m-  m_Center: {x: 0, y: 0, z: 0}[m
+[31m---- !u!33 &1331007066[m
+[31m-MeshFilter:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 1331007061}[m
+[31m-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}[m
+[32m+[m[32m  m_Mesh: {fileID: 4300000, guid: c01f2b1be2a34414ba3baa078cbdf827, type: 3}[m
+ --- !u!1 &1386911729[m
+ GameObject:[m
+   m_ObjectHideFlags: 0[m
+[36m@@ -777,20 +713,20 @@[m [mTransform:[m
+   m_PrefabParentObject: {fileID: 0}[m
+   m_PrefabInternal: {fileID: 0}[m
+   m_GameObject: {fileID: 1386911729}[m
+[31m-  m_LocalRotation: {x: 0.06843389, y: 0.9036748, z: -0.14621125, w: 0.39662457}[m
+[31m-  m_LocalPosition: {x: -27.89, y: 13.96, z: 24.62}[m
+[32m+[m[32m  m_LocalRotation: {x: 0.04692477, y: 0.9257048, z: -0.18623723, w: 0.32585967}[m
+[32m+[m[32m  m_LocalPosition: {x: -22.93, y: 10.98, z: 18.67}[m
+   m_LocalScale: {x: 1, y: 1, z: 1}[m
+   m_Children: [][m
+   m_Father: {fileID: 124851309}[m
+   m_RootOrder: 0[m
+[31m-  m_LocalEulerAnglesHint: {x: 18.575, y: 132.68301, z: 0.46600002}[m
+[32m+[m[32m  m_LocalEulerAnglesHint: {x: 22.048, y: 140.79901, z: -2.133}[m
+ --- !u!81 &1386911731[m
+ AudioListener:[m
+   m_ObjectHideFlags: 0[m
+   m_PrefabParentObject: {fileID: 0}[m
+   m_PrefabInternal: {fileID: 0}[m
+   m_GameObject: {fileID: 1386911729}[m
+[31m-  m_Enabled: 1[m
+[32m+[m[32m  m_Enabled: 0[m
+ --- !u!124 &1386911732[m
+ Behaviour:[m
+   m_ObjectHideFlags: 0[m
+[36m@@ -825,7 +761,7 @@[m [mCamera:[m
+   far clip plane: 69.8[m
+   field of view: 26.128822[m
+   orthographic: 1[m
+[31m-  orthographic size: 8.004154[m
+[32m+[m[32m  orthographic size: 6.782118[m
+   m_Depth: -1[m
+   m_CullingMask:[m
+     serializedVersion: 2[m
+[36m@@ -841,85 +777,6 @@[m [mCamera:[m
+   m_StereoConvergence: 10[m
+   m_StereoSeparation: 0.022[m
+   m_StereoMirrorMode: 0[m
+[31m---- !u!1 &1875406103[m
+[31m-GameObject:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  serializedVersion: 5[m
+[31m-  m_Component:[m
+[31m-  - component: {fileID: 1875406105}[m
+[31m-  - component: {fileID: 1875406104}[m
+[31m-  m_Layer: 0[m
+[31m-  m_Name: Directional Light[m
+[31m-  m_TagString: Untagged[m
+[31m-  m_Icon: {fileID: 0}[m
+[31m-  m_NavMeshLayer: 0[m
+[31m-  m_StaticEditorFlags: 0[m
+[31m-  m_IsActive: 1[m
+[31m---- !u!108 &1875406104[m
+[31m-Light:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 1875406103}[m
+[31m-  m_Enabled: 1[m
+[31m-  serializedVersion: 8[m
+[31m-  m_Type: 1[m
+[31m-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}[m
+[31m-  m_Intensity: 1[m
+[31m-  m_Range: 10[m
+[31m-  m_SpotAngle: 30[m
+[31m-  m_CookieSize: 10[m
+[31m-  m_Shadows:[m
+[31m-    m_Type: 2[m
+[31m-    m_Resolution: -1[m
+[31m-    m_CustomResolution: -1[m
+[31m-    m_Strength: 1[m
+[31m-    m_Bias: 0.05[m
+[31m-    m_NormalBias: 0.4[m
+[31m-    m_NearPlane: 0.2[m
+[31m-  m_Cookie: {fileID: 0}[m
+[31m-  m_DrawHalo: 0[m
+[31m-  m_Flare: {fileID: 0}[m
+[31m-  m_RenderMode: 0[m
+[31m-  m_CullingMask:[m
+[31m-    serializedVersion: 2[m
+[31m-    m_Bits: 4294967295[m
+[31m-  m_Lightmapping: 4[m
+[31m-  m_AreaSize: {x: 1, y: 1}[m
+[31m-  m_BounceIntensity: 1[m
+[31m-  m_FalloffTable:[m
+[31m-    m_Table[0]: 0[m
+[31m-    m_Table[1]: 0[m
+[31m-    m_Table[2]: 0[m
+[31m-    m_Table[3]: 0[m
+[31m-    m_Table[4]: 0[m
+[31m-    m_Table[5]: 0[m
+[31m-    m_Table[6]: 0[m
+[31m-    m_Table[7]: 0[m
+[31m-    m_Table[8]: 0[m
+[31m-    m_Table[9]: 0[m
+[31m-    m_Table[10]: 0[m
+[31m-    m_Table[11]: 0[m
+[31m-    m_Table[12]: 0[m
+[31m-  m_ColorTemperature: 6570[m
+[31m-  m_UseColorTemperature: 0[m
+[31m-  m_ShadowRadius: 0[m
+[31m-  m_ShadowAngle: 0[m
+[31m---- !u!4 &1875406105[m
+[31m-Transform:[m
+[31m-  m_ObjectHideFlags: 0[m
+[31m-  m_PrefabParentObject: {fileID: 0}[m
+[31m-  m_PrefabInternal: {fileID: 0}[m
+[31m-  m_GameObject: {fileID: 1875406103}[m
+[31m-  m_LocalRotation: {x: 0.94422376, y: -0.054555297, z: 0.25300393, w: 0.2036032}[m
+[31m-  m_LocalPosition: {x: -8.8, y: 27.9, z: 15.2}[m
+[31m-  m_LocalScale: {x: 1, y: 1, z: 1}[m
+[31m-  m_Children: [][m
+[31m-  m_Father: {fileID: 0}[m
+[31m-  m_RootOrder: 1[m
+[31m-  m_LocalEulerAnglesHint: {x: 155.663, y: -30, z: -0.000015258789}[m
+ --- !u!1 &1958744016[m
+ GameObject:[m
+   m_ObjectHideFlags: 0[m
+[36m@@ -945,20 +802,20 @@[m [mTransform:[m
+   m_PrefabParentObject: {fileID: 0}[m
+   m_PrefabInternal: {fileID: 0}[m
+   m_GameObject: {fileID: 1958744016}[m
+[31m-  m_LocalRotation: {x: 0.06843389, y: 0.9036748, z: -0.14621125, w: 0.39662457}[m
+[31m-  m_LocalPosition: {x: -27.89, y: 13.96, z: 24.62}[m
+[32m+[m[32m  m_LocalRotation: {x: 0.16841327, y: 0.39103732, z: -0.09232989, w: 0.9001122}[m
+[32m+[m[32m  m_LocalPosition: {x: -3.7, y: 7.4, z: -14.9}[m
+   m_LocalScale: {x: 1, y: 1, z: 1}[m
+   m_Children: [][m
+   m_Father: {fileID: 24953710}[m
+   m_RootOrder: 0[m
+[31m-  m_LocalEulerAnglesHint: {x: 18.575, y: 132.68301, z: 0.46600002}[m
+[32m+[m[32m  m_LocalEulerAnglesHint: {x: 22.048, y: 46.548, z: -2.1330001}[m
+ --- !u!81 &1958744018[m
+ AudioListener:[m
+   m_ObjectHideFlags: 0[m
+   m_PrefabParentObject: {fileID: 0}[m
+   m_PrefabInternal: {fileID: 0}[m
+   m_GameObject: {fileID: 1958744016}[m
+[31m-  m_Enabled: 1[m
+[32m+[m[32m  m_Enabled: 0[m
+ --- !u!124 &1958744019[m
+ Behaviour:[m
+   m_ObjectHideFlags: 0[m
+[36m@@ -993,7 +850,7 @@[m [mCamera:[m
+   far clip plane: 69.8[m
+   field of view: 26.128822[m
+   orthographic: 1[m
+[31m-  orthographic size: 8.004154[m
+[32m+[m[32m  orthographic size: 6.7821183[m
+   m_Depth: -1[m
+   m_CullingMask:[m
+     serializedVersion: 2[m
+[1mdiff --git a/Assets/scripts/Button.cs b/Assets/scripts/Button.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..910d360[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/scripts/Button.cs[m
+[36m@@ -0,0 +1,18 @@[m
+[32m+[m[32m﻿using System.Collections;[m
+[32m+[m[32musing System.Collections.Generic;[m
+[32m+[m[32musing UnityEngine;[m
+[32m+[m
+[32m+[m[32mpublic class Button : MonoBehaviour {[m
+[32m+[m
+[32m+[m	[32mpublic Animator animator;[m
+[32m+[m
+[32m+[m	[32mvoid OnTriggerEnter(Collider other)[m
+[32m+[m	[32m{[m
+[32m+[m		[32mDebug.Log("player entry button ");[m
+[32m+[m	[32m}[m
+[32m+[m	[32mvoid OnTriggerStay(Collider other)[m
+[32m+[m	[32m{[m
+[32m+[m		[32mDebug.Log("player on button ");[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/Assets/scripts/Button.cs.meta b/Assets/scripts/Button.cs.meta[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2705e5a[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/scripts/Button.cs.meta[m
+[36m@@ -0,0 +1,12 @@[m
+[32m+[m[32mfileFormatVersion: 2[m
+[32m+[m[32mguid: 6c8af2094e9360a4bbb77b5f19ea3dd3[m
+[32m+[m[32mtimeCreated: 1520618236[m
+[32m+[m[32mlicenseType: Free[m
+[32m+[m[32mMonoImporter:[m
+[32m+[m[32m  serializedVersion: 2[m
+[32m+[m[32m  defaultReferences: [][m
+[32m+[m[32m  executionOrder: 0[m
+[32m+[m[32m  icon: {instanceID: 0}[m
+[32m+[m[32m  userData:[m[41m [m
+[32m+[m[32m  assetBundleName:[m[41m [m
+[32m+[m[32m  assetBundleVariant:[m[41m [m
+[1mdiff --git a/Assets/voxel models.meta b/Assets/voxel models.meta[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c0ed1cb[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/voxel models.meta[m	
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32mfileFormatVersion: 2[m
+[32m+[m[32mguid: 4697dfa9945bc764fb4ae3c6a1d64e7d[m
+[32m+[m[32mfolderAsset: yes[m
+[32m+[m[32mtimeCreated: 1520615268[m
+[32m+[m[32mlicenseType: Free[m
+[32m+[m[32mDefaultImporter:[m
+[32m+[m[32m  userData:[m[41m [m
+[32m+[m[32m  assetBundleName:[m[41m [m
+[32m+[m[32m  assetBundleVariant:[m[41m [m
+[1mdiff --git a/Assets/voxel models/Materials.meta b/Assets/voxel models/Materials.meta[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c0d3247[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/voxel models/Materials.meta[m	
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32mfileFormatVersion: 2[m
+[32m+[m[32mguid: 092d73c19f639724bb97284646d384f3[m
+[32m+[m[32mfolderAsset: yes[m
+[32m+[m[32mtimeCreated: 1520615271[m
+[32m+[m[32mlicenseType: Free[m
+[32m+[m[32mDefaultImporter:[m
+[32m+[m[32m  userData:[m[41m [m
+[32m+[m[32m  assetBundleName:[m[41m [m
+[32m+[m[32m  assetBundleVariant:[m[41m [m
+[1mdiff --git a/Assets/voxel models/Materials/No Name.mat b/Assets/voxel models/Materials/No Name.mat[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bd34c19[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/voxel models/Materials/No Name.mat[m	
+[36m@@ -0,0 +1,89 @@[m
+[32m+[m[32m%YAML 1.1[m
+[32m+[m[32m%TAG !u! tag:unity3d.com,2011:[m
+[32m+[m[32m--- !u!21 &2100000[m
+[32m+[m[32mMaterial:[m
+[32m+[m[32m  serializedVersion: 6[m
+[32m+[m[32m  m_ObjectHideFlags: 0[m
+[32m+[m[32m  m_PrefabParentObject: {fileID: 0}[m
+[32m+[m[32m  m_PrefabInternal: {fileID: 0}[m
+[32m+[m[32m  m_Name: No Name[m
+[32m+[m[32m  m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}[m
+[32m+[m[32m  m_ShaderKeywords:[m[41m [m
+[32m+[m[32m  m_LightmapFlags: 4[m
+[32m+[m[32m  m_EnableInstancingVariants: 0[m
+[32m+[m[32m  m_DoubleSidedGI: 0[m
+[32m+[m[32m  m_CustomRenderQueue: -1[m
+[32m+[m[32m  stringTagMap: {}[m
+[32m+[m[32m  disabledShaderPasses: [][m
+[32m+[m[32m  m_SavedProperties:[m
+[32m+[m[32m    serializedVersion: 3[m
+[32m+[m[32m    m_TexEnvs:[m
+[32m+[m[32m    - _AlphaTex:[m
+[32m+[m[32m        m_Texture: {fileID: 0}[m
+[32m+[m[32m        m_Scale: {x: 1, y: 1}[m
+[32m+[m[32m        m_Offset: {x: 0, y: 0}[m
+[32m+[m[32m    - _BumpMap:[m
+[32m+[m[32m        m_Texture: {fileID: 0}[m
+[32m+[m[32m        m_Scale: {x: 1, y: 1}[m
+[32m+[m[32m        m_Offset: {x: 0, y: 0}[m
+[32m+[m[32m    - _DetailAlbedoMap:[m
+[32m+[m[32m        m_Texture: {fileID: 0}[m
+[32m+[m[32m        m_Scale: {x: 1, y: 1}[m
+[32m+[m[32m        m_Offset: {x: 0, y: 0}[m
+[32m+[m[32m    - _DetailMask:[m
+[32m+[m[32m        m_Texture: {fileID: 0}[m
+[32m+[m[32m        m_Scale: {x: 1, y: 1}[m
+[32m+[m[32m        m_Offset: {x: 0, y: 0}[m
+[32m+[m[32m    - _DetailNormalMap:[m
+[32m+[m[32m        m_Texture: {fileID: 0}[m
+[32m+[m[32m        m_Scale: {x: 1, y: 1}[m
+[32m+[m[32m        m_Offset: {x: 0, y: 0}[m
+[32m+[m[32m    - _EmissionMap:[m
+[32m+[m[32m        m_Texture: {fileID: 0}[m
+[32m+[m[32m        m_Scale: {x: 1, y: 1}[m
+[32m+[m[32m        m_Offset: {x: 0, y: 0}[m
+[32m+[m[32m    - _MainTex:[m
+[32m+[m[32m        m_Texture: {fileID: 0}[m
+[32m+[m[32m        m_Scale: {x: 1, y: 1}[m
+[32m+[m[32m        m_Offset: {x: 0, y: 0}[m
+[32m+[m[32m    - _MetallicGlossMap:[m
+[32m+[m[32m        m_Texture: {fileID: 0}[m
+[32m+[m[32m        m_Scale: {x: 1, y: 1}[m
+[32m+[m[32m        m_Offset: {x: 0, y: 0}[m
+[32m+[m[32m    - _OcclusionMap:[m
+[32m+[m[32m        m_Texture: {fileID: 0}[m
+[32m+[m[32m        m_Scale: {x: 1, y: 1}[m
+[32m+[m[32m        m_Offset: {x: 0, y: 0}[m
+[32m+[m[32m    - _ParallaxMap:[m
+[32m+[m[32m        m_Texture: {fileID: 0}[m
+[32m+[m[32m        m_Scale: {x: 1, y: 1}[m
+[32m+[m[32m        m_Offset: {x: 0, y: 0}[m
+[32m+[m[32m    - _SpecGlossMap:[m
+[32m+[m[32m        m_Texture: {fileID: 0}[m
+[32m+[m[32m        m_Scale: {x: 1, y: 1}[m
+[32m+[m[32m        m_Offset: {x: 0, y: 0}[m
+[32m+[m[32m    m_Floats:[m
+[32m+[m[32m    - PixelSnap: 0[m
+[32m+[m[32m    - _BumpScale: 1[m
+[32m+[m[32m    - _Cutoff: 0.5[m
+[32m+[m[32m    - _DetailNormalMapScale: 1[m
+[32m+[m[32m    - _DstBlend: 0[m
+[32m+[m[32m    - _EnableExternalAlpha: 0[m
+[32m+[m[32m    - _GlossMapScale: 1[m
+[32m+[m[32m    - _Glossiness: 0.5[m
+[32m+[m[32m    - _GlossyReflections: 1[m
+[32m+[m[32m    - _Metallic: 0[m
+[32m+[m[32m    - _Mode: 0[m
+[32m+[m[32m    - _OcclusionStrength: 1[m
+[32m+[m[32m    - _Parallax: 0.02[m
+[32m+[m[32m    - _SmoothnessTextureChannel: 0[m
+[32m+[m[32m    - _SpecularHighlights: 1[m
+[32m+[m[32m    - _SrcBlend: 1[m
+[32m+[m[32m    - _UVSec: 0[m
+[32m+[m[32m    - _ZWrite: 1[m
+[32m+[m[32m    m_Colors:[m
+[32m+[m[32m    - _Color: {r: 0.25, g: 0.21139705, b: 0.21139705, a: 1}[m
+[32m+[m[32m    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}[m
+[32m+[m[32m    - _Flip: {r: 1, g: 1, b: 1, a: 1}[m
+[32m+[m[32m    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}[m
+[32m+[m[32m    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}[m
+[1mdiff --git a/Assets/voxel models/Materials/No Name.mat.meta b/Assets/voxel models/Materials/No Name.mat.meta[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3e8a24a[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/voxel models/Materials/No Name.mat.meta[m	
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32mfileFormatVersion: 2[m
+[32m+[m[32mguid: 04e8bc99377cacc4d81c7514c2b76481[m
+[32m+[m[32mtimeCreated: 1520615271[m
+[32m+[m[32mlicenseType: Free[m
+[32m+[m[32mNativeFormatImporter:[m
+[32m+[m[32m  mainObjectFileID: 2100000[m
+[32m+[m[32m  userData:[m[41m [m
+[32m+[m[32m  assetBundleName:[m[41m [m
+[32m+[m[32m  assetBundleVariant:[m[41m [m
+[1mdiff --git a/Assets/voxel models/door.fbx b/Assets/voxel models/door.fbx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cabbb38[m
+Binary files /dev/null and b/Assets/voxel models/door.fbx differ
+[1mdiff --git a/Assets/voxel models/door.fbx.meta b/Assets/voxel models/door.fbx.meta[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8897906[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/voxel models/door.fbx.meta[m	
+[36m@@ -0,0 +1,87 @@[m
+[32m+[m[32mfileFormatVersion: 2[m
+[32m+[m[32mguid: ee5d76bba41dd604b9f6bae081102539[m
+[32m+[m[32mtimeCreated: 1520616495[m
+[32m+[m[32mlicenseType: Free[m
+[32m+[m[32mModelImporter:[m
+[32m+[m[32m  serializedVersion: 21[m
+[32m+[m[32m  fileIDToRecycleName:[m
+[32m+[m[32m    100000: //RootNode[m
+[32m+[m[32m    400000: //RootNode[m
+[32m+[m[32m    2300000: //RootNode[m
+[32m+[m[32m    3300000: //RootNode[m
+[32m+[m[32m    4300000: door[m
+[32m+[m[32m  materials:[m
+[32m+[m[32m    importMaterials: 1[m
+[32m+[m[32m    materialName: 0[m
+[32m+[m[32m    materialSearch: 1[m
+[32m+[m[32m  animations:[m
+[32m+[m[32m    legacyGenerateAnimations: 4[m
+[32m+[m[32m    bakeSimulation: 0[m
+[32m+[m[32m    resampleCurves: 1[m
+[32m+[m[32m    optimizeGameObjects: 0[m
+[32m+[m[32m    motionNodeName:[m[41m [m
+[32m+[m[32m    rigImportErrors:[m[41m [m
+[32m+[m[32m    rigImportWarnings:[m[41m [m
+[32m+[m[32m    animationImportErrors:[m[41m [m
+[32m+[m[32m    animationImportWarnings:[m[41m [m
+[32m+[m[32m    animationRetargetingWarnings:[m[41m [m
+[32m+[m[32m    animationDoRetargetingWarnings: 0[m
+[32m+[m[32m    animationCompression: 1[m
+[32m+[m[32m    animationRotationError: 0.5[m
+[32m+[m[32m    animationPositionError: 0.5[m
+[32m+[m[32m    animationScaleError: 0.5[m
+[32m+[m[32m    animationWrapMode: 0[m
+[32m+[m[32m    extraExposedTransformPaths: [][m
+[32m+[m[32m    extraUserProperties: [][m
+[32m+[m[32m    clipAnimations: [][m
+[32m+[m[32m    isReadable: 1[m
+[32m+[m[32m  meshes:[m
+[32m+[m[32m    lODScreenPercentages: [][m
+[32m+[m[32m    globalScale: 1[m
+[32m+[m[32m    meshCompression: 0[m
+[32m+[m[32m    addColliders: 0[m
+[32m+[m[32m    importVisibility: 1[m
+[32m+[m[32m    importBlendShapes: 1[m
+[32m+[m[32m    importCameras: 1[m
+[32m+[m[32m    importLights: 1[m
+[32m+[m[32m    swapUVChannels: 0[m
+[32m+[m[32m    generateSecondaryUV: 0[m
+[32m+[m[32m    useFileUnits: 1[m
+[32m+[m[32m    optimizeMeshForGPU: 1[m
+[32m+[m[32m    keepQuads: 0[m
+[32m+[m[32m    weldVertices: 1[m
+[32m+[m[32m    secondaryUVAngleDistortion: 8[m
+[32m+[m[32m    secondaryUVAreaDistortion: 15.000001[m
+[32m+[m[32m    secondaryUVHardAngle: 88[m
+[32m+[m[32m    secondaryUVPackMargin: 4[m
+[32m+[m[32m    useFileScale: 1[m
+[32m+[m[32m  tangentSpace:[m
+[32m+[m[32m    normalSmoothAngle: 60[m
+[32m+[m[32m    normalImportMode: 0[m
+[32m+[m[32m    tangentImportMode: 3[m
+[32m+[m[32m    normalCalculationMode: 4[m
+[32m+[m[32m  importAnimation: 1[m
+[32m+[m[32m  copyAvatar: 0[m
+[32m+[m[32m  humanDescription:[m
+[32m+[m[32m    serializedVersion: 2[m
+[32m+[m[32m    human: [][m
+[32m+[m[32m    skeleton: [][m
+[32m+[m[32m    armTwist: 0.5[m
+[32m+[m[32m    foreArmTwist: 0.5[m
+[32m+[m[32m    upperLegTwist: 0.5[m
+[32m+[m[32m    legTwist: 0.5[m
+[32m+[m[32m    armStretch: 0.05[m
+[32m+[m[32m    legStretch: 0.05[m
+[32m+[m[32m    feetSpacing: 0[m
+[32m+[m[32m    rootMotionBoneName:[m[41m [m
+[32m+[m[32m    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}[m
+[32m+[m[32m    hasTranslationDoF: 0[m
+[32m+[m[32m    hasExtraRoot: 0[m
+[32m+[m[32m    skeletonHasParents: 1[m
+[32m+[m[32m  lastHumanDescriptionAvatarSource: {instanceID: 0}[m
+[32m+[m[32m  animationType: 0[m
+[32m+[m[32m  humanoidOversampling: 1[m
+[32m+[m[32m  additionalBone: 0[m
+[32m+[m[32m  userData:[m[41m [m
+[32m+[m[32m  assetBundleName:[m[41m [m
+[32m+[m[32m  assetBundleVariant:[m[41m [m
+[1mdiff --git a/Assets/voxel models/map.vox b/Assets/voxel models/map.vox[m
+[1mnew file mode 100644[m
+[1mindex 0000000..12ce6d4[m
+Binary files /dev/null and b/Assets/voxel models/map.vox differ
+[1mdiff --git a/Assets/voxel models/map.vox.meta b/Assets/voxel models/map.vox.meta[m
+[1mnew file mode 100644[m
+[1mindex 0000000..93259ab[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/voxel models/map.vox.meta[m	
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32mfileFormatVersion: 2[m
+[32m+[m[32mguid: e8541d83f67eb4341a9b7656c6ca35f7[m
+[32m+[m[32mtimeCreated: 1520615268[m
+[32m+[m[32mlicenseType: Free[m
+[32m+[m[32mDefaultImporter:[m
+[32m+[m[32m  userData:[m[41m [m
+[32m+[m[32m  assetBundleName:[m[41m [m
+[32m+[m[32m  assetBundleVariant:[m[41m [m
+[1mdiff --git a/Assets/voxel models/untitled.fbx b/Assets/voxel models/untitled.fbx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cf22734[m
+Binary files /dev/null and b/Assets/voxel models/untitled.fbx differ
+[1mdiff --git a/Assets/voxel models/untitled.fbx.meta b/Assets/voxel models/untitled.fbx.meta[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5f26571[m
+[1m--- /dev/null[m
+[1m+++ b/Assets/voxel models/untitled.fbx.meta[m	
+[36m@@ -0,0 +1,87 @@[m
+[32m+[m[32mfileFormatVersion: 2[m
+[32m+[m[32mguid: c01f2b1be2a34414ba3baa078cbdf827[m
+[32m+[m[32mtimeCreated: 1520615271[m
+[32m+[m[32mlicenseType: Free[m
+[32m+[m[32mModelImporter:[m
+[32m+[m[32m  serializedVersion: 21[m
+[32m+[m[32m  fileIDToRecycleName:[m
+[32m+[m[32m    100000: //RootNode[m
+[32m+[m[32m    400000: //RootNode[m
+[32m+[m[32m    2300000: //RootNode[m
+[32m+[m[32m    3300000: //RootNode[m
+[32m+[m[32m    4300000: map[m
+[32m+[m[32m  materials:[m
+[32m+[m[32m    importMaterials: 1[m
+[32m+[m[32m    materialName: 0[m
+[32m+[m[32m    materialSearch: 1[m
+[32m+[m[32m  animations:[m
+[32m+[m[32m    legacyGenerateAnimations: 4[m
+[32m+[m[32m    bakeSimulation: 0[m
+[32m+[m[32m    resampleCurves: 1[m
+[32m+[m[32m    optimizeGameObjects: 0[m
+[32m+[m[32m    motionNodeName:[m[41m [m
+[32m+[m[32m    rigImportErrors:[m[41m [m
+[32m+[m[32m    rigImportWarnings:[m[41m [m
+[32m+[m[32m    animationImportErrors:[m[41m [m
+[32m+[m[32m    animationImportWarnings:[m[41m [m
+[32m+[m[32m    animationRetargetingWarnings:[m[41m [m
+[32m+[m[32m    animationDoRetargetingWarnings: 0[m
+[32m+[m[32m    animationCompression: 1[m
+[32m+[m[32m    animationRotationError: 0.5[m
+[32m+[m[32m    animationPositionError: 0.5[m
+[32m+[m[32m    animationScaleError: 0.5[m
+[32m+[m[32m    animationWrapMode: 0[m
+[32m+[m[32m    extraExposedTransformPaths: [][m
+[32m+[m[32m    extraUserProperties: [][m
+[32m+[m[32m    clipAnimations: [][m
+[32m+[m[32m    isReadable: 1[m
+[32m+[m[32m  meshes:[m
+[32m+[m[32m    lODScreenPercentages: [][m
+[32m+[m[32m    globalScale: 1[m
+[32m+[m[32m    meshCompression: 0[m
+[32m+[m[32m    addColliders: 0[m
+[32m+[m[32m    importVisibility: 1[m
+[32m+[m[32m    importBlendShapes: 1[m
+[32m+[m[32m    importCameras: 1[m
+[32m+[m[32m    importLights: 1[m
+[32m+[m[32m    swapUVChannels: 0[m
+[32m+[m[32m    generateSecondaryUV: 0[m
+[32m+[m[32m    useFileUnits: 1[m
+[32m+[m[32m    optimizeMeshForGPU: 1[m
+[32m+[m[32m    keepQuads: 0[m
+[32m+[m[32m    weldVertices: 1[m
+[32m+[m[32m    secondaryUVAngleDistortion: 8[m
+[32m+[m[32m    secondaryUVAreaDistortion: 15.000001[m
+[32m+[m[32m    secondaryUVHardAngle: 88[m
+[32m+[m[32m    secondaryUVPackMargin: 4[m
+[32m+[m[32m    useFileScale: 1[m
+[32m+[m[32m  tangentSpace:[m
+[32m+[m[32m    normalSmoothAngle: 60[m
+[32m+[m[32m    normalImportMode: 0[m
+[32m+[m[32m    tangentImportMode: 3[m
+[32m+[m[32m    normalCalculationMode: 4[m
+[32m+[m[32m  importAnimation: 1[m
+[32m+[m[32m  copyAvatar: 0[m
+[32m+[m[32m  humanDescription:[m
+[32m+[m[32m    serializedVersion: 2[m
+[32m+[m[32m    human: [][m
+[32m+[m[32m    skeleton: [][m
+[32m+[m[32m    armTwist: 0.5[m
+[32m+[m[32m    foreArmTwist: 0.5[m
+[32m+[m[32m    upperLegTwist: 0.5[m
+[32m+[m[32m    legTwist: 0.5[m
+[32m+[m[32m    armStretch: 0.05[m
+[32m+[m[32m    legStretch: 0.05[m
+[32m+[m[32m    feetSpacing: 0[m
+[32m+[m[32m    rootMotionBoneName:[m[41m [m
+[32m+[m[32m    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}[m
+[32m+[m[32m    hasTranslationDoF: 0[m
+[32m+[m[32m    hasExtraRoot: 0[m
+[32m+[m[32m    skeletonHasParents: 1[m
+[32m+[m[32m  lastHumanDescriptionAvatarSource: {instanceID: 0}[m
+[32m+[m[32m  animationType: 0[m
+[32m+[m[32m  humanoidOversampling: 1[m
+[32m+[m[32m  additionalBone: 0[m
+[32m+[m[32m  userData:[m[41m [m
+[32m+[m[32m  assetBundleName:[m[41m [m
+[32m+[m[32m  assetBundleVariant:[m[41m [m
+[1mdiff --git a/Library/CurrentLayout.dwlt b/Library/CurrentLayout.dwlt[m
+[1mindex e83c359..dd07641 100644[m
+[1m--- a/Library/CurrentLayout.dwlt[m
+[1m+++ b/Library/CurrentLayout.dwlt[m
+[36m@@ -13,8 +13,8 @@[m [mMonoBehaviour:[m
+   m_EditorClassIdentifier: [m
+   m_PixelRect:[m
+     serializedVersion: 2[m
+[31m-    x: 8[m
+[31m-    y: 51[m
+[32m+[m[32m    x: 0[m
+[32m+[m[32m    y: 104[m
+     width: 1904[m
+     height: 977[m
+   m_ShowMode: 4[m
+[36m@@ -36,16 +36,17 @@[m [mMonoBehaviour:[m
+   m_Children: [][m
+   m_Position:[m
+     serializedVersion: 2[m
+[31m-    x: 754[m
+[32m+[m[32m    x: 589[m
+     y: 0[m
+[31m-    width: 618[m
+[32m+[m[32m    width: 783[m
+     height: 656[m
+[31m-  m_MinSize: {x: 204, y: 221}[m
+[32m+[m[32m  m_MinSize: {x: 104, y: 121}[m
+   m_MaxSize: {x: 4004, y: 4021}[m
+[31m-  m_ActualView: {fileID: 18}[m
+[32m+[m[32m  m_ActualView: {fileID: 14}[m
+   m_Panes:[m
+[31m-  - {fileID: 18}[m
+[31m-  m_Selected: 0[m
+[32m+[m[32m  - {fileID: 20}[m
+[32m+[m[32m  - {fileID: 14}[m
+[32m+[m[32m  m_Selected: 1[m
+   m_LastSelected: 0[m
+ --- !u!114 &3[m
+ MonoBehaviour:[m
+[36m@@ -67,10 +68,10 @@[m [mMonoBehaviour:[m
+     y: 30[m
+     width: 1904[m
+     height: 927[m
+[31m-  m_MinSize: {x: 883, y: 492}[m
+[31m-  m_MaxSize: {x: 16008, y: 14042}[m
+[32m+[m[32m  m_MinSize: {x: 787, y: 492}[m
+[32m+[m[32m  m_MaxSize: {x: 16012, y: 14042}[m
+   vertical: 0[m
+[31m-  controlID: 133[m
+[32m+[m[32m  controlID: 21[m
+ --- !u!114 &4[m
+ MonoBehaviour:[m
+   m_ObjectHideFlags: 52[m
+[36m@@ -89,11 +90,11 @@[m [mMonoBehaviour:[m
+     y: 0[m
+     width: 532[m
+     height: 927[m
+[31m-  m_MinSize: {x: 275, y: 50}[m
+[31m-  m_MaxSize: {x: 4000, y: 4000}[m
+[31m-  m_ActualView: {fileID: 15}[m
+[32m+[m[32m  m_MinSize: {x: 277, y: 71}[m
+[32m+[m[32m  m_MaxSize: {x: 4002, y: 4021}[m
+[32m+[m[32m  m_ActualView: {fileID: 17}[m
+   m_Panes:[m
+[31m-  - {fileID: 15}[m
+[32m+[m[32m  - {fileID: 17}[m
+   m_Selected: 0[m
+   m_LastSelected: 0[m
+ --- !u!114 &5[m
+[36m@@ -112,13 +113,13 @@[m [mMonoBehaviour:[m
+     serializedVersion: 2[m
+     x: 0[m
+     y: 0[m
+[31m-    width: 200[m
+[32m+[m[32m    width: 202[m
+     height: 656[m
+[31m-  m_MinSize: {x: 200, y: 200}[m
+[31m-  m_MaxSize: {x: 4000, y: 4000}[m
+[31m-  m_ActualView: {fileID: 16}[m
+[32m+[m[32m  m_MinSize: {x: 202, y: 221}[m
+[32m+[m[32m  m_MaxSize: {x: 4002, y: 4021}[m
+[32m+[m[32m  m_ActualView: {fileID: 18}[m
+   m_Panes:[m
+[31m-  - {fileID: 16}[m
+[32m+[m[32m  - {fileID: 18}[m
+   m_Selected: 0[m
+   m_LastSelected: 0[m
+ --- !u!114 &6[m
+[36m@@ -141,10 +142,10 @@[m [mMonoBehaviour:[m
+     height: 271[m
+   m_MinSize: {x: 232, y: 271}[m
+   m_MaxSize: {x: 10002, y: 10021}[m
+[31m-  m_ActualView: {fileID: 14}[m
+[32m+[m[32m  m_ActualView: {fileID: 16}[m
+   m_Panes:[m
+[31m-  - {fileID: 14}[m
+[31m-  - {fileID: 19}[m
+[32m+[m[32m  - {fileID: 16}[m
+[32m+[m[32m  - {fileID: 21}[m
+   m_Selected: 0[m
+   m_LastSelected: 1[m
+ --- !u!114 &7[m
+[36m@@ -168,7 +169,7 @@[m [mMonoBehaviour:[m
+     y: 0[m
+     width: 1904[m
+     height: 977[m
+[31m-  m_MinSize: {x: 950, y: 300}[m
+[32m+[m[32m  m_MinSize: {x: 950, y: 542}[m
+   m_MaxSize: {x: 10000, y: 10000}[m
+ --- !u!114 &8[m
+ MonoBehaviour:[m
+[36m@@ -231,10 +232,10 @@[m [mMonoBehaviour:[m
+     y: 0[m
+     width: 1372[m
+     height: 927[m
+[31m-  m_MinSize: {x: 608, y: 492}[m
+[31m-  m_MaxSize: {x: 12008, y: 14042}[m
+[32m+[m[32m  m_MinSize: {x: 510, y: 492}[m
+[32m+[m[32m  m_MaxSize: {x: 12010, y: 14042}[m
+   vertical: 1[m
+[31m-  controlID: 47[m
+[32m+[m[32m  controlID: 128[m
+ --- !u!114 &11[m
+ MonoBehaviour:[m
+   m_ObjectHideFlags: 52[m
+[36m@@ -256,10 +257,10 @@[m [mMonoBehaviour:[m
+     y: 0[m
+     width: 1372[m
+     height: 656[m
+[31m-  m_MinSize: {x: 608, y: 221}[m
+[31m-  m_MaxSize: {x: 12008, y: 4021}[m
+[32m+[m[32m  m_MinSize: {x: 510, y: 221}[m
+[32m+[m[32m  m_MaxSize: {x: 12010, y: 4021}[m
+   vertical: 0[m
+[31m-  controlID: 48[m
+[32m+[m[32m  controlID: 129[m
+ --- !u!114 &12[m
+ MonoBehaviour:[m
+   m_ObjectHideFlags: 52[m
+[36m@@ -274,19 +275,96 @@[m [mMonoBehaviour:[m
+   m_Children: [][m
+   m_Position:[m
+     serializedVersion: 2[m
+[31m-    x: 200[m
+[32m+[m[32m    x: 202[m
+     y: 0[m
+[31m-    width: 554[m
+[32m+[m[32m    width: 387[m
+     height: 656[m
+   m_MinSize: {x: 204, y: 221}[m
+   m_MaxSize: {x: 4004, y: 4021}[m
+[31m-  m_ActualView: {fileID: 17}[m
+[32m+[m[32m  m_ActualView: {fileID: 19}[m
+   m_Panes:[m
+[31m-  - {fileID: 17}[m
+[32m+[m[32m  - {fileID: 19}[m
+[32m+[m[32m  - {fileID: 15}[m
+   - {fileID: 13}[m
+   m_Selected: 0[m
+   m_LastSelected: 1[m
+ --- !u!114 &13[m
+[32m+[m[32mMonoBehaviour:[m
+[32m+[m[32m  m_ObjectHideFlags: 52[m
+[32m+[m[32m  m_PrefabParentObject: {fileID: 0}[m
+[32m+[m[32m  m_PrefabInternal: {fileID: 0}[m
+[32m+[m[32m  m_GameObject: {fileID: 0}[m
+[32m+[m[32m  m_Enabled: 1[m
+[32m+[m[32m  m_EditorHideFlags: 1[m
+[32m+[m[32m  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}[m
+[32m+[m[32m  m_Name:[m[41m [m
+[32m+[m[32m  m_EditorClassIdentifier:[m[41m [m
+[32m+[m[32m  m_AutoRepaintOnSceneChange: 0[m
+[32m+[m[32m  m_MinSize: {x: 100, y: 100}[m
+[32m+[m[32m  m_MaxSize: {x: 4000, y: 4000}[m
+[32m+[m[32m  m_TitleContent:[m
+[32m+[m[32m    m_Text: Animation[m
+[32m+[m[32m    m_Image: {fileID: 1561878555887300916, guid: 0000000000000000d000000000000000,[m
+[32m+[m[32m      type: 0}[m
+[32m+[m[32m    m_Tooltip:[m[41m [m
+[32m+[m[32m  m_DepthBufferBits: 0[m
+[32m+[m[32m  m_Pos:[m
+[32m+[m[32m    serializedVersion: 2[m
+[32m+[m[32m    x: 212[m
+[32m+[m[32m    y: 100[m
+[32m+[m[32m    width: 739[m
+[32m+[m[32m    height: 635[m
+[32m+[m[32m  m_AnimEditor: {fileID: 0}[m
+[32m+[m[32m  m_Locked: 0[m
+[32m+[m[32m--- !u!114 &14[m
+[32m+[m[32mMonoBehaviour:[m
+[32m+[m[32m  m_ObjectHideFlags: 52[m
+[32m+[m[32m  m_PrefabParentObject: {fileID: 0}[m
+[32m+[m[32m  m_PrefabInternal: {fileID: 0}[m
+[32m+[m[32m  m_GameObject: {fileID: 0}[m
+[32m+[m[32m  m_Enabled: 1[m
+[32m+[m[32m  m_EditorHideFlags: 0[m
+[32m+[m[32m  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}[m
+[32m+[m[32m  m_Name:[m[41m [m
+[32m+[m[32m  m_EditorClassIdentifier:[m[41m [m
+[32m+[m[32m  m_AutoRepaintOnSceneChange: 1[m
+[32m+[m[32m  m_MinSize: {x: 100, y: 100}[m
+[32m+[m[32m  m_MaxSize: {x: 4000, y: 4000}[m
+[32m+[m[32m  m_TitleContent:[m
+[32m+[m[32m    m_Text: Animator[m
+[32m+[m[32m    m_Image: {fileID: 663490763026382308, guid: 0000000000000000d000000000000000,[m
+[32m+[m[32m      type: 0}[m
+[32m+[m[32m    m_Tooltip:[m[41m [m
+[32m+[m[32m  m_DepthBufferBits: 0[m
+[32m+[m[32m  m_Pos:[m
+[32m+[m[32m    serializedVersion: 2[m
+[32m+[m[32m    x: 591[m
+[32m+[m[32m    y: 153[m
+[32m+[m[32m    width: 779[m
+[32m+[m[32m    height: 635[m
+[32m+[m[32m  m_ViewPositions:[m
+[32m+[m[32m    m_KeySerializationHelper:[m
+[32m+[m[32m    - {fileID: 1107078916002937422, guid: 1eb34836444d3354ca2afa1e1b498a1b, type: 2}[m
+[32m+[m[32m    m_ValueSerializationHelper:[m
+[32m+[m[32m    - {x: 417.40002, y: 291}[m
+[32m+[m[32m  m_PreviewAnimator: {fileID: 0}[m
+[32m+[m[32m  m_AnimatorController: {fileID: 9100000, guid: 1eb34836444d3354ca2afa1e1b498a1b,[m
+[32m+[m[32m    type: 2}[m
+[32m+[m[32m  m_BreadCrumbs:[m
+[32m+[m[32m  - m_Target: {fileID: 1107078916002937422, guid: 1eb34836444d3354ca2afa1e1b498a1b,[m
+[32m+[m[32m      type: 2}[m
+[32m+[m[32m    m_ScrollPosition: {x: 0, y: 0}[m
+[32m+[m[32m  stateMachineGraph: {fileID: 0}[m
+[32m+[m[32m  stateMachineGraphGUI: {fileID: 0}[m
+[32m+[m[32m  blendTreeGraph: {fileID: 0}[m
+[32m+[m[32m  blendTreeGraphGUI: {fileID: 0}[m
+[32m+[m[32m  m_AutoLiveLink: 1[m
+[32m+[m[32m  m_MiniTool: 0[m
+[32m+[m[32m  m_SerializedLocked: 0[m
+[32m+[m[32m  m_CurrentEditor: 1[m
+[32m+[m[32m  m_LayerEditor:[m
+[32m+[m[32m    m_SelectedLayerIndex: 0[m
+[32m+[m[32m--- !u!114 &15[m
+ MonoBehaviour:[m
+   m_ObjectHideFlags: 52[m
+   m_PrefabParentObject: {fileID: 0}[m
+[36m@@ -308,11 +386,11 @@[m [mMonoBehaviour:[m
+   m_DepthBufferBits: 0[m
+   m_Pos:[m
+     serializedVersion: 2[m
+[31m-    x: 210[m
+[31m-    y: 100[m
+[31m-    width: 632[m
+[32m+[m[32m    x: 204[m
+[32m+[m[32m    y: 153[m
+[32m+[m[32m    width: 383[m
+     height: 635[m
+[31m---- !u!114 &14[m
+[32m+[m[32m--- !u!114 &16[m
+ MonoBehaviour:[m
+   m_ObjectHideFlags: 52[m
+   m_PrefabParentObject: {fileID: 0}[m
+[36m@@ -334,8 +412,8 @@[m [mMonoBehaviour:[m
+   m_DepthBufferBits: 0[m
+   m_Pos:[m
+     serializedVersion: 2[m
+[31m-    x: 8[m
+[31m-    y: 756[m
+[32m+[m[32m    x: 0[m
+[32m+[m[32m    y: 809[m
+     width: 1370[m
+     height: 250[m
+   m_SearchFilter:[m
+[36m@@ -359,10 +437,10 @@[m [mMonoBehaviour:[m
+   m_LastProjectPath: \\CODD.sis.virtual.uniandes.edu.co\Estudiantes\Profiles\aa.molano\Documents\savjars[m
+   m_IsLocked: 0[m
+   m_FolderTreeState:[m
+[31m-    scrollPos: {x: 0, y: 60}[m
+[31m-    m_SelectedIDs: 22260000[m
+[31m-    m_LastClickedID: 9762[m
+[31m-    m_ExpandedIDs: 000000000c26000014260000462900005c3400006a34000000ca9a3bffffff7f[m
+[32m+[m[32m    scrollPos: {x: 0, y: 0}[m
+[32m+[m[32m    m_SelectedIDs: a8260000[m
+[32m+[m[32m    m_LastClickedID: 9896[m
+[32m+[m[32m    m_ExpandedIDs: 000000001e26000080260000a22600008827000000ca9a3bffffff7f[m
+     m_RenameOverlay:[m
+       m_UserAcceptedRename: 0[m
+       m_Name: [m
+[36m@@ -390,7 +468,7 @@[m [mMonoBehaviour:[m
+     scrollPos: {x: 0, y: 0}[m
+     m_SelectedIDs: [m
+     m_LastClickedID: 0[m
+[31m-    m_ExpandedIDs: 000000000c26000014260000[m
+[32m+[m[32m    m_ExpandedIDs: 000000001e2600006426000080260000a226000088270000[m
+     m_RenameOverlay:[m
+       m_UserAcceptedRename: 0[m
+       m_Name: [m
+[36m@@ -418,7 +496,7 @@[m [mMonoBehaviour:[m
+     m_SelectedInstanceIDs: [m
+     m_LastClickedInstanceID: 0[m
+     m_HadKeyboardFocusLastEvent: 1[m
+[31m-    m_ExpandedInstanceIDs: c6230000[m
+[32m+[m[32m    m_ExpandedInstanceIDs: c623000000000000cc260000[m
+     m_RenameOverlay:[m
+       m_UserAcceptedRename: 0[m
+       m_Name: [m
+[36m@@ -444,8 +522,8 @@[m [mMonoBehaviour:[m
+     m_NewAssetIndexInList: -1[m
+     m_ScrollPosition: {x: 0, y: 0}[m
+     m_GridSize: 64[m
+[31m-  m_DirectoriesAreaWidth: 336[m
+[31m---- !u!114 &15[m
+[32m+[m[32m  m_DirectoriesAreaWidth: 335[m
+[32m+[m[32m--- !u!114 &17[m
+ MonoBehaviour:[m
+   m_ObjectHideFlags: 52[m
+   m_PrefabParentObject: {fileID: 0}[m
+[36m@@ -467,8 +545,8 @@[m [mMonoBehaviour:[m
+   m_DepthBufferBits: 0[m
+   m_Pos:[m
+     serializedVersion: 2[m
+[31m-    x: 1382[m
+[31m-    y: 100[m
+[32m+[m[32m    x: 1374[m
+[32m+[m[32m    y: 153[m
+     width: 530[m
+     height: 906[m
+   m_ScrollPosition: {x: 0, y: 0}[m
+[36m@@ -478,7 +556,7 @@[m [mMonoBehaviour:[m
+     m_ControlHash: -371814159[m
+     m_PrefName: Preview_InspectorPreview[m
+   m_PreviewWindow: {fileID: 0}[m
+[31m---- !u!114 &16[m
+[32m+[m[32m--- !u!114 &18[m
+ MonoBehaviour:[m
+   m_ObjectHideFlags: 52[m
+   m_PrefabParentObject: {fileID: 0}[m
+[36m@@ -500,15 +578,15 @@[m [mMonoBehaviour:[m
+   m_DepthBufferBits: 0[m
+   m_Pos:[m
+     serializedVersion: 2[m
+[31m-    x: 8[m
+[31m-    y: 100[m
+[31m-    width: 198[m
+[32m+[m[32m    x: 0[m
+[32m+[m[32m    y: 153[m
+[32m+[m[32m    width: 200[m
+     height: 635[m
+   m_TreeViewState:[m
+     scrollPos: {x: 0, y: 0}[m
+[31m-    m_SelectedIDs: [m
+[32m+[m[32m    m_SelectedIDs: 382f0000[m
+     m_LastClickedID: 0[m
+[31m-    m_ExpandedIDs: 42eff8ff4aeff8ff4ceff8ffbe0df9ffe231f9ffee88f9fff288f9ff94f1f9ffc02afaff7e51faffdca5fbff26c1fbff0edefbffa2e6fbff7a00fcff7ca8fcff7ea8fcff78ecfcffae56feffa4a0feffeca8feff78bffeffcc3fffff1afcffff0000000032260000422600006a2c00003e3100001e3600002e3600003c3600006636000078360000263d00007e3d0000c83d0000e63d0000[m
+[32m+[m[32m    m_ExpandedIDs: 18fcffff1afcffff00000000ec26000000270000[m
+     m_RenameOverlay:[m
+       m_UserAcceptedRename: 0[m
+       m_Name: [m
+[36m@@ -531,7 +609,7 @@[m [mMonoBehaviour:[m
+   m_CurrenRootInstanceID: 0[m
+   m_Locked: 0[m
+   m_CurrentSortingName: TransformSorting[m
+[31m---- !u!114 &17[m
+[32m+[m[32m--- !u!114 &19[m
+ MonoBehaviour:[m
+   m_ObjectHideFlags: 52[m
+   m_PrefabParentObject: {fileID: 0}[m
+[36m@@ -553,9 +631,9 @@[m [mMonoBehaviour:[m
+   m_DepthBufferBits: 32[m
+   m_Pos:[m
+     serializedVersion: 2[m
+[31m-    x: 210[m
+[31m-    y: 100[m
+[31m-    width: 550[m
+[32m+[m[32m    x: 204[m
+[32m+[m[32m    y: 153[m
+[32m+[m[32m    width: 383[m
+     height: 635[m
+   m_SceneLighting: 1[m
+   lastFramingTime: 3376.7697747368743[m
+[36m@@ -563,9 +641,9 @@[m [mMonoBehaviour:[m
+   m_isRotationLocked: 0[m
+   m_AudioPlay: 0[m
+   m_Position:[m
+[31m-    m_Target: {x: -14.363686, y: 17.89921, z: -0.95504904}[m
+[32m+[m[32m    m_Target: {x: -4.1279173, y: 5.036391, z: -16.331572}[m
+     speed: 2[m
+[31m-    m_Value: {x: -14.363686, y: 17.89921, z: -0.95504904}[m
+[32m+[m[32m    m_Value: {x: -4.1279173, y: 5.036391, z: -16.331572}[m
+   m_RenderMode: 0[m
+   m_ValidateTrueMetals: 0[m
+   m_SceneViewState:[m
+[36m@@ -588,13 +666,13 @@[m [mMonoBehaviour:[m
+       speed: 2[m
+       m_Value: 0[m
+   m_Rotation:[m
+[31m-    m_Target: {x: -0.030155981, y: -0.8884814, z: 0.0590036, w: -0.45410362}[m
+[32m+[m[32m    m_Target: {x: 0.060097635, y: 0.8263489, z: -0.08985789, w: 0.55268556}[m
+     speed: 2[m
+[31m-    m_Value: {x: -0.030155981, y: -0.8884814, z: 0.0590036, w: -0.45410362}[m
+[32m+[m[32m    m_Value: {x: 0.060097635, y: 0.8263489, z: -0.08985789, w: 0.55268556}[m
+   m_Size:[m
+[31m-    m_Target: 65.42578[m
+[32m+[m[32m    m_Target: 9.610394[m
+     speed: 2[m
+[31m-    m_Value: 65.42578[m
+[32m+[m[32m    m_Value: 9.610394[m
+   m_Ortho:[m
+     m_Target: 0[m
+     speed: 2[m
+[36m@@ -605,7 +683,7 @@[m [mMonoBehaviour:[m
+   m_ReplacementString: [m
+   m_LastLockedObject: {fileID: 0}[m
+   m_ViewIsLockedToObject: 0[m
+[31m---- !u!114 &18[m
+[32m+[m[32m--- !u!114 &20[m
+ MonoBehaviour:[m
+   m_ObjectHideFlags: 52[m
+   m_PrefabParentObject: {fileID: 0}[m
+[36m@@ -627,9 +705,9 @@[m [mMonoBehaviour:[m
+   m_DepthBufferBits: 32[m
+   m_Pos:[m
+     serializedVersion: 2[m
+[31m-    x: 764[m
+[31m-    y: 100[m
+[31m-    width: 614[m
+[32m+[m[32m    x: 591[m
+[32m+[m[32m    y: 153[m
+[32m+[m[32m    width: 779[m
+     height: 635[m
+   m_MaximizeOnPlay: 0[m
+   m_Gizmos: 0[m
+[36m@@ -639,10 +717,10 @@[m [mMonoBehaviour:[m
+   m_ZoomArea:[m
+     m_HRangeLocked: 0[m
+     m_VRangeLocked: 0[m
+[31m-    m_HBaseRangeMin: -307[m
+[31m-    m_HBaseRangeMax: 307[m
+[31m-    m_VBaseRangeMin: -172.6875[m
+[31m-    m_VBaseRangeMax: 172.6875[m
+[32m+[m[32m    m_HBaseRangeMin: -389.5[m
+[32m+[m[32m    m_HBaseRangeMax: 389.5[m
+[32m+[m[32m    m_VBaseRangeMin: -219.09375[m
+[32m+[m[32m    m_VBaseRangeMax: 219.09375[m
+     m_HAllowExceedBaseRangeMin: 1[m
+     m_HAllowExceedBaseRangeMax: 1[m
+     m_VAllowExceedBaseRangeMin: 1[m
+[36m@@ -659,29 +737,29 @@[m [mMonoBehaviour:[m
+       serializedVersion: 2[m
+       x: 0[m
+       y: 17[m
+[31m-      width: 614[m
+[32m+[m[32m      width: 779[m
+       height: 618[m
+     m_Scale: {x: 1, y: 1}[m
+[31m-    m_Translation: {x: 307, y: 309}[m
+[32m+[m[32m    m_Translation: {x: 389.5, y: 309}[m
+     m_MarginLeft: 0[m
+     m_MarginRight: 0[m
+     m_MarginTop: 0[m
+     m_MarginBottom: 0[m
+     m_LastShownAreaInsideMargins:[m
+       serializedVersion: 2[m
+[31m-      x: -307[m
+[32m+[m[32m      x: -389.5[m
+       y: -309[m
+[31m-      width: 614[m
+[32m+[m[32m      width: 779[m
+       height: 618[m
+     m_MinimalGUI: 1[m
+   m_defaultScale: 1[m
+   m_TargetTexture: {fileID: 0}[m
+   m_CurrentColorSpace: 0[m
+[31m-  m_LastWindowPixelSize: {x: 614, y: 635}[m
+[32m+[m[32m  m_LastWindowPixelSize: {x: 779, y: 635}[m
+   m_ClearInEditMode: 1[m
+   m_NoCameraWarning: 1[m
+   m_LowResolutionForAspectRatios: 01000000000100000100[m
+[31m---- !u!114 &19[m
+[32m+[m[32m--- !u!114 &21[m
+ MonoBehaviour:[m
+   m_ObjectHideFlags: 52[m
+   m_PrefabParentObject: {fileID: 0}[m
+[36m@@ -703,7 +781,7 @@[m [mMonoBehaviour:[m
+   m_DepthBufferBits: 0[m
+   m_Pos:[m
+     serializedVersion: 2[m
+[31m-    x: 8[m
+[31m-    y: 756[m
+[31m-    width: 1516[m
+[32m+[m[32m    x: 0[m
+[32m+[m[32m    y: 809[m
+[32m+[m[32m    width: 1370[m
+     height: 250[m
+[1mdiff --git a/Library/InspectorExpandedItems.asset b/Library/InspectorExpandedItems.asset[m
+[1mindex cb9b136..269fa82 100644[m
+Binary files a/Library/InspectorExpandedItems.asset and b/Library/InspectorExpandedItems.asset differ
+[1mdiff --git a/Library/ScriptAssemblies/Assembly-CSharp.dll b/Library/ScriptAssemblies/Assembly-CSharp.dll[m
+[1mindex 5e65cd0..44b42f2 100644[m
+Binary files a/Library/ScriptAssemblies/Assembly-CSharp.dll and b/Library/ScriptAssemblies/Assembly-CSharp.dll differ
+[1mdiff --git a/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb b/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb[m
+[1mindex 24e81dc..e030ad8 100644[m
+Binary files a/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb and b/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb differ
+[1mdiff --git a/Library/assetDatabase3 b/Library/assetDatabase3[m
+[1mindex 6a29236..82946ab 100644[m
+Binary files a/Library/assetDatabase3 and b/Library/assetDatabase3 differ
+[1mdiff --git a/Library/expandedItems b/Library/expandedItems[m
+[1mindex d983f1d..4c999fe 100644[m
+Binary files a/Library/expandedItems and b/Library/expandedItems differ
+[1mdiff --git a/Library/metadata/04/04e8bc99377cacc4d81c7514c2b76481 b/Library/metadata/04/04e8bc99377cacc4d81c7514c2b76481[m
+[1mnew file mode 100644[m
+[1mindex 0000000..56af421[m
+Binary files /dev/null and b/Library/metadata/04/04e8bc99377cacc4d81c7514c2b76481 differ
+[1mdiff --git a/Library/metadata/04/04e8bc99377cacc4d81c7514c2b76481.info b/Library/metadata/04/04e8bc99377cacc4d81c7514c2b76481.info[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cf0a5d5[m
+Binary files /dev/null and b/Library/metadata/04/04e8bc99377cacc4d81c7514c2b76481.info differ
+[1mdiff --git a/Library/metadata/09/092d73c19f639724bb97284646d384f3 b/Library/metadata/09/092d73c19f639724bb97284646d384f3[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ac1f791[m
+Binary files /dev/null and b/Library/metadata/09/092d73c19f639724bb97284646d384f3 differ
+[1mdiff --git a/Library/metadata/09/092d73c19f639724bb97284646d384f3.info b/Library/metadata/09/092d73c19f639724bb97284646d384f3.info[m
+[1mnew file mode 100644[m
+[1mindex 0000000..72ca126[m
+Binary files /dev/null and b/Library/metadata/09/092d73c19f639724bb97284646d384f3.info differ
+[1mdiff --git a/Library/metadata/1e/1eb34836444d3354ca2afa1e1b498a1b b/Library/metadata/1e/1eb34836444d3354ca2afa1e1b498a1b[m
+[1mnew file mode 100644[m
+[1mindex 0000000..93e9af5[m
+Binary files /dev/null and b/Library/metadata/1e/1eb34836444d3354ca2afa1e1b498a1b differ
+[1mdiff --git a/Library/metadata/1e/1eb34836444d3354ca2afa1e1b498a1b.info b/Library/metadata/1e/1eb34836444d3354ca2afa1e1b498a1b.info[m
+[1mnew file mode 100644[m
+[1mindex 0000000..094c821[m
+Binary files /dev/null and b/Library/metadata/1e/1eb34836444d3354ca2afa1e1b498a1b.info differ
+[1mdiff --git a/Library/metadata/46/4697dfa9945bc764fb4ae3c6a1d64e7d b/Library/metadata/46/4697dfa9945bc764fb4ae3c6a1d64e7d[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f327069[m
+Binary files /dev/null and b/Library/metadata/46/4697dfa9945bc764fb4ae3c6a1d64e7d differ
+[1mdiff --git a/Library/metadata/46/4697dfa9945bc764fb4ae3c6a1d64e7d.info b/Library/metadata/46/4697dfa9945bc764fb4ae3c6a1d64e7d.info[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e867c4f[m
+Binary files /dev/null and b/Library/metadata/46/4697dfa9945bc764fb4ae3c6a1d64e7d.info differ
+[1mdiff --git a/Library/metadata/6c/6c8af2094e9360a4bbb77b5f19ea3dd3 b/Library/metadata/6c/6c8af2094e9360a4bbb77b5f19ea3dd3[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9378b43[m
+Binary files /dev/null and b/Library/metadata/6c/6c8af2094e9360a4bbb77b5f19ea3dd3 differ
+[1mdiff --git a/Library/metadata/6c/6c8af2094e9360a4bbb77b5f19ea3dd3.info b/Library/metadata/6c/6c8af2094e9360a4bbb77b5f19ea3dd3.info[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8ce6ea7[m
+Binary files /dev/null and b/Library/metadata/6c/6c8af2094e9360a4bbb77b5f19ea3dd3.info differ
+[1mdiff --git a/Library/metadata/90/90a5c0d362edc3f49a96a14a3914c520 b/Library/metadata/90/90a5c0d362edc3f49a96a14a3914c520[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6327879[m
+Binary files /dev/null and b/Library/metadata/90/90a5c0d362edc3f49a96a14a3914c520 differ
+[1mdiff --git a/Library/metadata/90/90a5c0d362edc3f49a96a14a3914c520.info b/Library/metadata/90/90a5c0d362edc3f49a96a14a3914c520.info[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ffc3fdd[m
+Binary files /dev/null and b/Library/metadata/90/90a5c0d362edc3f49a96a14a3914c520.info differ
+[1mdiff --git a/Library/metadata/bf/bff545825adcd2b4fa6866284a9151c2 b/Library/metadata/bf/bff545825adcd2b4fa6866284a9151c2[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bd54842[m
+Binary files /dev/null and b/Library/metadata/bf/bff545825adcd2b4fa6866284a9151c2 differ
+[1mdiff --git a/Library/metadata/bf/bff545825adcd2b4fa6866284a9151c2.info b/Library/metadata/bf/bff545825adcd2b4fa6866284a9151c2.info[m
+[1mnew file mode 100644[m
+[1mindex 0000000..26257db[m
+Binary files /dev/null and b/Library/metadata/bf/bff545825adcd2b4fa6866284a9151c2.info differ
+[1mdiff --git a/Library/metadata/c0/c01f2b1be2a34414ba3baa078cbdf827 b/Library/metadata/c0/c01f2b1be2a34414ba3baa078cbdf827[m
+[1mnew file mode 100644[m
+[1mindex 0000000..99a6942[m
+Binary files /dev/null and b/Library/metadata/c0/c01f2b1be2a34414ba3baa078cbdf827 differ
+[1mdiff --git a/Library/metadata/c0/c01f2b1be2a34414ba3baa078cbdf827.info b/Library/metadata/c0/c01f2b1be2a34414ba3baa078cbdf827.info[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5cc4eeb[m
+Binary files /dev/null and b/Library/metadata/c0/c01f2b1be2a34414ba3baa078cbdf827.info differ
+[1mdiff --git a/Library/metadata/e8/e8541d83f67eb4341a9b7656c6ca35f7 b/Library/metadata/e8/e8541d83f67eb4341a9b7656c6ca35f7[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1dde293[m
+Binary files /dev/null and b/Library/metadata/e8/e8541d83f67eb4341a9b7656c6ca35f7 differ
+[1mdiff --git a/Library/metadata/e8/e8541d83f67eb4341a9b7656c6ca35f7.info b/Library/metadata/e8/e8541d83f67eb4341a9b7656c6ca35f7.info[m
+[1mnew file mode 100644[m
+[1mindex 0000000..87c5ec3[m
+Binary files /dev/null and b/Library/metadata/e8/e8541d83f67eb4341a9b7656c6ca35f7.info differ
+[1mdiff --git a/Library/metadata/ee/ee5d76bba41dd604b9f6bae081102539 b/Library/metadata/ee/ee5d76bba41dd604b9f6bae081102539[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e3d3953[m
+Binary files /dev/null and b/Library/metadata/ee/ee5d76bba41dd604b9f6bae081102539 differ
+[1mdiff --git a/Library/metadata/ee/ee5d76bba41dd604b9f6bae081102539.info b/Library/metadata/ee/ee5d76bba41dd604b9f6bae081102539.info[m
+[1mnew file mode 100644[m
+[1mindex 0000000..28801fd[m
+Binary files /dev/null and b/Library/metadata/ee/ee5d76bba41dd604b9f6bae081102539.info differ
+[1mdiff --git a/Library/shadercompiler-UnityShaderCompiler.exe0.log b/Library/shadercompiler-UnityShaderCompiler.exe0.log[m
+[1mindex 210a4a9..5be4fab 100644[m
+[1m--- a/Library/shadercompiler-UnityShaderCompiler.exe0.log[m
+[1m+++ b/Library/shadercompiler-UnityShaderCompiler.exe0.log[m
+[36m@@ -1,80 +1,2 @@[m
+ Base path: C:/Program Files/Unity/Editor/Data[m
+ Cmd: initializeCompiler[m
+[31m-Cmd: preprocess[m
+[31m-  insize=293 outsize=293 ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=1113 outsize=1534 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=1113 outsize=442 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=14441 outsize=1886 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=14441 outsize=1826 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=4250 outsize=1218 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=4250 outsize=1754 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=846 outsize=1414 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=846 outsize=218 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=3594 outsize=1378 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=3594 outsize=642 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=7821 outsize=3250 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=7821 outsize=502 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=6779 outsize=3066 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=6779 outsize=502 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=65983 outsize=1838 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=65983 outsize=3022 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=2539 outsize=790 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=2539 outsize=450 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=629 outsize=826 kw=ETC1_EXTERNAL_ALPHA pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=629 outsize=574 kw=ETC1_EXTERNAL_ALPHA pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=2259 outsize=790 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=2259 outsize=402 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=2012 outsize=834 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=2012 outsize=666 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=6771 outsize=2886 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=6771 outsize=254 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=1530 outsize=3606 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=1530 outsize=430 kw=SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=15375 outsize=3742 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=15375 outsize=2322 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=5582 outsize=3090 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=5582 outsize=2210 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=14267 outsize=4802 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=14267 outsize=2730 kw=DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=15375 outsize=3514 kw=DIRECTIONAL SHADOWS_SCREEN pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=15375 outsize=3966 kw=DIRECTIONAL SHADOWS_SCREEN pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=0 insize=2259 outsize=1186 kw=SOFTPARTICLES_ON pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[31m-Cmd: compileSnippet[m
+[31m-  api=4 type=1 insize=2259 outsize=758 kw=SOFTPARTICLES_ON pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME ok=1[m
+[1mdiff --git a/obj/Debug/Assembly-CSharp.dll b/obj/Debug/Assembly-CSharp.dll[m
+[1mindex 3a3dcfe..468d456 100644[m
+Binary files a/obj/Debug/Assembly-CSharp.dll and b/obj/Debug/Assembly-CSharp.dll differ
+[1mdiff --git a/obj/Debug/Assembly-CSharp.pdb b/obj/Debug/Assembly-CSharp.pdb[m
+[1mindex 7583f3b..ccd7c71 100644[m
+Binary files a/obj/Debug/Assembly-CSharp.pdb and b/obj/Debug/Assembly-CSharp.pdb differ
+[1mdiff --git a/savjars.userprefs b/savjars.userprefs[m
+[1mindex dfc1dcd..d97ab65 100644[m
+[1m--- a/savjars.userprefs[m
+[1m+++ b/savjars.userprefs[m
+[36m@@ -1,10 +1,10 @@[m
+ ﻿<Properties StartupItem="Assembly-CSharp.csproj">[m
+   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />[m
+[31m-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Basics_Movement.cs">[m
+[32m+[m[32m  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Button.cs">[m
+     <Files>[m
+[31m-      <File FileName="Assets\scripts\Basics_Movement.cs" Line="23" Column="15" />[m
+[32m+[m[32m      <File FileName="Assets\scripts\Basics_Movement.cs" Line="1" Column="1" />[m
+       <File FileName="Assets\scripts\CameraChange.cs" Line="1" Column="1" />[m
+[31m-      <File FileName="Assets\Simple Health Bar\_Asteroids Example\Scripts\PlayerHealth.cs" Line="33" Column="126" />[m
+[32m+[m[32m      <File FileName="Assets\scripts\Button.cs" Line="11" Column="37" />[m
+     </Files>[m
+   </MonoDevelop.Ide.Workbench>[m
+   <MonoDevelop.Ide.DebuggingService.Breakpoints>[m
