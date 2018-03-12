@@ -16,11 +16,14 @@ public class Basics_Movement : MonoBehaviour {
 	private bool salto;
 
 	private float jumpH;
+
+	public float aquaMass;
 	// Use this for initialization
 	void Start () {
 		salto = false;
 		jumpSleeper = 0;
-		jumpH = 300;
+		jumpH = 500;
+		aquaMass = 1;
 	}
 	
 	// Update is called once per frame
@@ -49,6 +52,8 @@ public class Basics_Movement : MonoBehaviour {
 			jumpSleeper = 0;
 			salto = false;
 		}
+
+		this.GetComponent<Rigidbody> ().mass =aquaMass;
 
 	}
 }

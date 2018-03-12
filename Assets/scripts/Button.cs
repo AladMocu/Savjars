@@ -21,7 +21,7 @@ public class Button : MonoBehaviour {
 	void OnTriggerStay(Collider other)
 	{
 		Debug.Log("mass over button: "+massOverButton);
-		if (massOverButton > 1) {
+		if (massOverButton >= 2) {
 			animator.enabled = true;
 		}
 	}

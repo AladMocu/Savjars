@@ -46,15 +46,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\IndicatorFacer.cs" />
      <Compile Include="Assets\Simple Health Bar\Scripts\SimpleHealthBar.cs" />
      <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\AsteroidController.cs" />
      <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\GameManager.cs" />
      <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\HealthPickupController.cs" />
      <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\scripts\AquaManagement.cs" />
      <Compile Include="Assets\scripts\Basics_Movement.cs" />
      <Compile Include="Assets\scripts\Button.cs" />
      <Compile Include="Assets\scripts\CameraChange.cs" />
+     <Compile Include="Assets\scripts\Drower.cs" />
      <None Include="Assets\Simple Health Bar\README.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
