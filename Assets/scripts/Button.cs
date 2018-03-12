@@ -4,19 +4,27 @@ using UnityEngine;
 
 public class Button : MonoBehaviour {
 
-	public GameObject door;
 
 	public Animator animator;
-	protected float massOverButton=0;
+	public float massOverButton=0;
+	private Vector3 baseSpot;
 
 	void Start()
 	{
 		animator.enabled = false;
+		baseSpot = transform.position;
+	}
+	void Update()
+	{
+		this.transform.position = baseSpot - new Vector3 (0,massOverButton,0)*0.08f;
 	}
 
 	void OnTriggerEnter(Collider other)
 	{
-		massOverButton+=other.GetComponent<Rigidbody> ().mass;
+		if (other.tag.Equals ("Player")) {
+			massOverButton += other.GetComponent<Rigidbody> ().mass;
+		}
+	
 	}
 	void OnTriggerStay(Collider other)
 	{
@@ -27,7 +35,10 @@ public class Button : MonoBehaviour {
 	}
 	void OnTriggerExit(Collider other)
 	{
-		massOverButton-=other.GetComponent<Rigidbody> ().mass;
+		if (other.tag.Equals ("Player")) {
+			massOverButton -= other.GetComponent<Rigidbody> ().mass;
+		}
+	
 	}
 
 }
