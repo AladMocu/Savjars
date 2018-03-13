@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Simple Health Bar\Editor\SimpleHealthBarEditor.cs" />
      <Compile Include="Assets\Simple Health Bar\Editor\SimpleHealthBarWindow.cs" />
+     <Compile Include="Assets\editor\ButtonEditor.cs" />
      <None Include="Assets\Simple Health Bar\README.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>D:/Program Files/unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>

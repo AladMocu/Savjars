@@ -2,21 +2,51 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Button : MonoBehaviour {
 
 
-	public Animator animator;
-	public float massOverButton=0;
+	private float massOverButton=0;
 	private Vector3 baseSpot;
+
+	/**
+	 * Mass to activate the button
+	 * **/
+	public float requiredMas;
+
+	public enum Action{
+		Animation,
+		Bool,
+	}
+	public Action action;
+
+	public Animator animator;
+
+
+
+
+	public enum Identifier
+	{
+		Req_player1,
+		Req_player2,
+	}
+	public Identifier id;
+
+	public ReqsEnabler toChange;
+
 
 	void Start()
 	{
-		animator.enabled = false;
 		baseSpot = transform.position;
+		if (action == Action.Animation) {
+			animator.enabled = false;
+		}
+		requiredMas = 2;
 	}
 	void Update()
 	{
 		this.transform.position = baseSpot - new Vector3 (0,massOverButton,0)*0.08f;
+
 	}
 
 	void OnTriggerEnter(Collider other)
@@ -30,7 +60,19 @@ public class Button : MonoBehaviour {
 	{
 		Debug.Log("mass over button: "+massOverButton);
 		if (massOverButton >= 2) {
-			animator.enabled = true;
+			//Case Animator
+			if (action == Action.Animation) {
+				animator.enabled = true;
+			}
+			if (action == Action.Bool) {
+				if (id == Identifier.Req_player1) {
+					toChange.set1 (true);
+				} else {
+					toChange.set2 (true);
+				}
+			}
+
+
 		}
 	}
 	void OnTriggerExit(Collider other)
