@@ -4,15 +4,16 @@ using UnityEngine;
 using UnityEditor;
 
 [CanEditMultipleObjects]
-[CustomEditor (typeof(Button))]
-public class ButtonEditor : Editor {
+[CustomEditor (typeof(Accioner))]
+public class ActionerEditor : Editor {
 
 	public SerializedProperty 
 	action_prop,
 	animator_prop,
 	toChange_prop,
 	requiredMass_prop,
-	id_prop;
+	id_prop,
+	kind_prop;
 
 	void OnEnable()
 	{
@@ -21,27 +22,38 @@ public class ButtonEditor : Editor {
 		animator_prop=serializedObject.FindProperty ("animator");
 		id_prop=serializedObject.FindProperty ("id");
 		toChange_prop = serializedObject.FindProperty ("toChange");
+		kind_prop = serializedObject.FindProperty ("kind");
 
 	}
 	override public void OnInspectorGUI(){
 		serializedObject.Update ();
 
 
-		EditorGUILayout.PropertyField(requiredMass_prop,new GUIContent("requiredMass"));
+
+		EditorGUILayout.PropertyField (kind_prop);
+		Accioner.Kind k = (Accioner.Kind)kind_prop.enumValueIndex;
+
+		if(k==Accioner.Kind.Button)
+		{
+			EditorGUILayout.PropertyField(requiredMass_prop,new GUIContent("requiredMass"));
+		}
+
+
+
 
 		EditorGUILayout.PropertyField (action_prop);
-		Button.Action ac = (Button.Action)action_prop.enumValueIndex;
+		Accioner.Action ac = (Accioner.Action)action_prop.enumValueIndex;
 
-	
+
 		switch (ac) {
 
-		case Button.Action.Animation:
+		case Accioner.Action.Animation:
 			EditorGUILayout.PropertyField (animator_prop);
 			break;
 
-		case Button.Action.Bool:
+		case Accioner.Action.Bool:
 			EditorGUILayout.PropertyField (id_prop);
-			Button.Identifier id = (Button.Identifier)id_prop.enumValueIndex;
+			Accioner.Identifier id = (Accioner.Identifier)id_prop.enumValueIndex;
 			EditorGUILayout.PropertyField(toChange_prop,new GUIContent("toChange"));
 			break;
 		}

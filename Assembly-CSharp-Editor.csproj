@@ -48,11 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\Simple Health Bar\Editor\SimpleHealthBarEditor.cs" />
      <Compile Include="Assets\Simple Health Bar\Editor\SimpleHealthBarWindow.cs" />
-     <Compile Include="Assets\editor\ButtonEditor.cs" />
+     <Compile Include="Assets\editor\ActionerEditor.cs" />
      <None Include="Assets\Simple Health Bar\README.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>D:/Program Files/unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>D:/Program Files/unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -94,9 +91,6 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>D:/Program Files/unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>D:/Program Files/unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.VR">
  <HintPath>D:/Program Files/unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
