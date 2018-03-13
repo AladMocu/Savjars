@@ -29,6 +29,8 @@ public class Accioner : MonoBehaviour {
 
 	public Animator animator;
 
+	private bool state;
+
 
 
 
@@ -51,6 +53,10 @@ public class Accioner : MonoBehaviour {
 		if (kind == Kind.Button) {
 			requiredMass = 2;
 		}
+		if (kind == Kind.Lever) {
+			state = false;
+		}
+
 	}
 	void Update()
 	{
@@ -72,7 +78,7 @@ public class Accioner : MonoBehaviour {
 	void OnTriggerStay(Collider other)
 	{
 		if (kind == Kind.Button) {
-			Debug.Log("mass over button: "+massOverButton);
+			if(massOverButton!=0)Debug.Log("mass over button: "+massOverButton);
 			if (massOverButton >= requiredMass) {
 				//Case Animator
 				if (action == Action.Animation) {
@@ -89,14 +95,19 @@ public class Accioner : MonoBehaviour {
 
 		}
 		if (kind == Kind.Lever) {
+			state = !state;
+			int dir = state ? 1 : -1;
+
 			if (action == Action.Animation) {
+				
 				animator.enabled = true;
 			}
 			if (action == Action.Bool) {
+				
 				if (id == Identifier.Req_player1) {
-					toChange.set1 (true);
+					toChange.set1 (state);
 				} else {
-					toChange.set2 (true);
+					toChange.set2 (state);
 				}
 			}
 		}
