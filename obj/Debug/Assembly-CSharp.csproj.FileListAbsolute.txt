@@ -91,3 +91,6 @@ C:\Users\User\Desktop\game\Savjars\Temp\bin\Debug\UnityEngine.VR.xml
 C:\Users\User\Desktop\game\Savjars\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\User\Desktop\game\Savjars\obj\Debug\Assembly-CSharp.dll
 C:\Users\User\Desktop\game\Savjars\obj\Debug\Assembly-CSharp.pdb
+\\CODD.sis.virtual.uniandes.edu.co\Estudiantes\Profiles\aa.molano\Desktop\Savjars\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+\\CODD.sis.virtual.uniandes.edu.co\Estudiantes\Profiles\aa.molano\Desktop\Savjars\obj\Debug\Assembly-CSharp.dll
+\\CODD.sis.virtual.uniandes.edu.co\Estudiantes\Profiles\aa.molano\Desktop\Savjars\obj\Debug\Assembly-CSharp.pdb

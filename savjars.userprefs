@@ -1,16 +1,17 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Accioner.cs">
+﻿<Properties StartupItem="Savjars.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Basics_Movement.cs">
     <Files>
-      <File FileName="Assets\scripts\Basics_Movement.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Basics_Movement.cs" Line="21" Column="17" />
       <File FileName="Assets\scripts\CameraChange.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\ReqsEnabler.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\AquaManagement.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\Drower.cs" Line="1" Column="1" />
       <File FileName="Assets\Simple Health Bar\Editor\SimpleHealthBarEditor.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Accioner.cs" Line="63" Column="37" />
+      <File FileName="Assets\scripts\Accioner.cs" Line="102" Column="4" />
       <File FileName="Assets\editor\ActionerEditor.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\leaverAnimation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Simple Health Bar\Scripts\SimpleHealthBar.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
