@@ -11,7 +11,7 @@ public class ReqsEnabler : MonoBehaviour {
 	void Start () {
 		animator.enabled = false;
 		req1 = false;
-		req2 = false;
+		req2 = true;
 	}
 	
 	// Update is called once per frame

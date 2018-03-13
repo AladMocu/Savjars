@@ -12,7 +12,7 @@ public class Button : MonoBehaviour {
 	/**
 	 * Mass to activate the button
 	 * **/
-	public float requiredMas;
+	public float requiredMass;
 
 	public enum Action{
 		Animation,
@@ -41,7 +41,7 @@ public class Button : MonoBehaviour {
 		if (action == Action.Animation) {
 			animator.enabled = false;
 		}
-		requiredMas = 2;
+		requiredMass = 2;
 	}
 	void Update()
 	{
@@ -59,7 +59,7 @@ public class Button : MonoBehaviour {
 	void OnTriggerStay(Collider other)
 	{
 		Debug.Log("mass over button: "+massOverButton);
-		if (massOverButton >= 2) {
+		if (massOverButton >= requiredMass) {
 			//Case Animator
 			if (action == Action.Animation) {
 				animator.enabled = true;
