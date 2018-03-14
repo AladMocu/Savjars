@@ -101,6 +101,7 @@ public class Accioner : MonoBehaviour {
 			if (action == Action.Animation) {
 				
 				animator.enabled = true;
+
 			}
 			if (action == Action.Bool) {
 				

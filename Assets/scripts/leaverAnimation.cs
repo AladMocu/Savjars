@@ -5,11 +5,11 @@ using UnityEngine;
 public class leaverAnimation : MonoBehaviour {
 
 	public Animator baseAnimation;
-    private int dir;
+	private bool p;
 	// Use this for initialization
 	void Start () {
 		baseAnimation.enabled = false;
-        dir =1 ;
+		p=true ;
 	}
 	
 	// Update is called once per frame
@@ -20,13 +20,14 @@ public class leaverAnimation : MonoBehaviour {
 	{
         
 		if (other.tag.Equals ("Player")) {
-        
-			Debug.Log ("dir is: " + dir);
-
-			baseAnimation.speed = dir;
 			baseAnimation.enabled = true;
-			baseAnimation.Play ("onLever", -1, 0f);
-			dir *= -1;
+			if (p) {
+				baseAnimation.Play ("onLever", -1, 0f);
+			} else {
+				baseAnimation.Play ("OnleverReverse", -1, 0f);
+			}
+
+			p=!p;
 		}
 	}
 }
