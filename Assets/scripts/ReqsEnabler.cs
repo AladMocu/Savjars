@@ -6,8 +6,9 @@ public class ReqsEnabler : MonoBehaviour {
 
 	// Use this for initialization
 	public Animator animator;
-	private bool req1;
+    private bool req1;
 	private bool req2;
+
 	void Start () {
 		animator.enabled = false;
 		req1 = false;

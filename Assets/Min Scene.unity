@@ -420,6 +420,7 @@ MonoBehaviour:
   kind: 0
   action: 1
   animator: {fileID: 0}
+  leaverAnimation: {fileID: 0}
   id: 0
   toChange: {fileID: 249001453}
 --- !u!23 &103441964
@@ -1920,6 +1921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseAnimation: {fileID: 908078899}
+  p: 0
 --- !u!23 &1098416995
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1985,6 +1987,7 @@ MonoBehaviour:
   kind: 1
   action: 1
   animator: {fileID: 0}
+  leaverAnimation: {fileID: 1098416994}
   id: 1
   toChange: {fileID: 249001453}
 --- !u!1 &1371256288
@@ -2346,6 +2349,7 @@ MonoBehaviour:
   kind: 0
   action: 0
   animator: {fileID: 669573309}
+  leaverAnimation: {fileID: 0}
   id: 0
   toChange: {fileID: 0}
 --- !u!23 &1435205644

@@ -5,7 +5,7 @@ using UnityEngine;
 public class leaverAnimation : MonoBehaviour {
 
 	public Animator baseAnimation;
-	private bool p;
+	public  bool p;
 	// Use this for initialization
 	void Start () {
 		baseAnimation.enabled = false;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Door2Reqs : MonoBehaviour {
 
+    
 	// Use this for initialization
 	void Start () {
 		

@@ -30,11 +30,11 @@ public class Accioner : MonoBehaviour {
 	public Animator animator;
 
 	private bool state;
+    private leaverAnimation leaverAnimation;
 
 
 
-
-	public enum Identifier
+    public enum Identifier
 	{
 		Req_player1,
 		Req_player2,
@@ -46,6 +46,7 @@ public class Accioner : MonoBehaviour {
 
 	void Start()
 	{
+        leaverAnimation = this.GetComponent<leaverAnimation>();
 		baseSpot = transform.position;
 		if (action == Action.Animation) {
 			animator.enabled = false;
@@ -54,7 +55,7 @@ public class Accioner : MonoBehaviour {
 			requiredMass = 2;
 		}
 		if (kind == Kind.Lever) {
-			state = false;
+			state = !leaverAnimation.p ;
 		}
 
 	}
@@ -63,8 +64,11 @@ public class Accioner : MonoBehaviour {
 		if (kind == Kind.Button) {
 			this.transform.position = baseSpot - new Vector3 (0,massOverButton,0)*0.08f;
 		}
-
-	}
+        if (kind == Kind.Lever)
+        {
+            state = !leaverAnimation.p;
+        }
+    }
 
 	void OnTriggerEnter(Collider other)
 	{
@@ -74,7 +78,32 @@ public class Accioner : MonoBehaviour {
 			}
 		}
 
-	}
+        if (kind == Kind.Lever)
+        {
+           
+
+            if (action == Action.Animation)
+            {
+
+                animator.enabled = true;
+
+            }
+            if (action == Action.Bool)
+            {
+
+                if (id.Equals(Identifier.Req_player1))
+                {
+                    toChange.set1(state);
+                }
+                else if (id.Equals(Identifier.Req_player2))
+                {
+                    toChange.set2(state);
+                }
+                
+            }
+        }
+
+    }
 	void OnTriggerStay(Collider other)
 	{
 		if (kind == Kind.Button) {
@@ -87,31 +116,15 @@ public class Accioner : MonoBehaviour {
 				if (action == Action.Bool) {
 					if (id == Identifier.Req_player1) {
 						toChange.set1 (true);
-					} else {
+					} else if (id == Identifier.Req_player1)
+                    {
 						toChange.set2 (true);
 					}
 				}
 			}
 
 		}
-		if (kind == Kind.Lever) {
-			state = !state;
-			int dir = state ? 1 : -1;
-
-			if (action == Action.Animation) {
-				
-				animator.enabled = true;
-
-			}
-			if (action == Action.Bool) {
-				
-				if (id == Identifier.Req_player1) {
-					toChange.set1 (state);
-				} else {
-					toChange.set2 (state);
-				}
-			}
-		}
+		
 	}
 	void OnTriggerExit(Collider other)
 	{
