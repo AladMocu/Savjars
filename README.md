@@ -24,4 +24,5 @@
 ## Notes:
 - Dont change the scripts, if you need a change on 1 of them send info to
 				 aladmocu@gmail.com
+- All pull request will be review if you changed a thing you were not allowed to, your level will be insta-rejected
 
