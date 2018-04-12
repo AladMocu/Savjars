@@ -25,14 +25,23 @@ public class Accioner : MonoBehaviour {
 		Animation,
 		Bool,
 	}
+
+	public enum Mode
+	{
+		Hold,
+		Activate,
+	}
+	public Mode mode;
 	public Action action;
 
 	public Animator animator;
 
+
+
 	private bool state;
     private leaverAnimation leaverAnimation;
 
-
+	private bool onButton;
 
     public enum Identifier
 	{
@@ -52,7 +61,7 @@ public class Accioner : MonoBehaviour {
 			animator.enabled = false;
 		}
 		if (kind == Kind.Button) {
-			requiredMass = 2;
+			
 		}
 		if (kind == Kind.Lever) {
 			state = !leaverAnimation.p ;
@@ -68,6 +77,7 @@ public class Accioner : MonoBehaviour {
         {
             state = !leaverAnimation.p;
         }
+	
     }
 
 	void OnTriggerEnter(Collider other)
@@ -76,32 +86,43 @@ public class Accioner : MonoBehaviour {
 			if (kind == Kind.Button) {
 				massOverButton += other.GetComponent<Rigidbody> ().mass;
 			}
+			if (kind == Kind.Lever)
+			{
+				
+				
+				if (action == Action.Animation)
+				{
+					
+				
+					if (!state) {
+						animator.enabled = true;
+						if (animator.isInitialized) {
+							Debug.Log ("reinding");
+							animator.Rebind ();
+						}
+					} else {
+						animator.Play ("Reverse");
+
+					}
+
+
+				}
+				if (action == Action.Bool)
+				{
+					
+					if (id.Equals(Identifier.Req_player1))
+					{
+						toChange.set1(state);
+					}
+					else if (id.Equals(Identifier.Req_player2))
+					{
+						toChange.set2(state);
+					}
+					
+				}
+			}
 		}
 
-        if (kind == Kind.Lever)
-        {
-           
-
-            if (action == Action.Animation)
-            {
-
-                animator.enabled = true;
-
-            }
-            if (action == Action.Bool)
-            {
-
-                if (id.Equals(Identifier.Req_player1))
-                {
-                    toChange.set1(state);
-                }
-                else if (id.Equals(Identifier.Req_player2))
-                {
-                    toChange.set2(state);
-                }
-                
-            }
-        }
 
     }
 	void OnTriggerStay(Collider other)
@@ -111,16 +132,27 @@ public class Accioner : MonoBehaviour {
 			if (massOverButton >= requiredMass) {
 				//Case Animator
 				if (action == Action.Animation) {
-					animator.enabled = true;
+					if (mode == Mode.Activate) {
+						animator.enabled = true;
+					}
+					else if (!onButton) {
+						animator.enabled = true;
+						if (animator.isInitialized) {
+							Debug.Log ("reinding");
+							animator.Rebind ();
+						}
+						onButton = true;
+					}
 				}
 				if (action == Action.Bool) {
 					if (id == Identifier.Req_player1) {
 						toChange.set1 (true);
-					} else if (id == Identifier.Req_player1)
-                    {
+					} else if (id == Identifier.Req_player1) {
 						toChange.set2 (true);
 					}
 				}
+			} else {
+				onButton = false;
 			}
 
 		}
@@ -131,9 +163,20 @@ public class Accioner : MonoBehaviour {
 		if (other.tag.Equals ("Player")) {
 			if (kind == Kind.Button) {
 				massOverButton -= other.GetComponent<Rigidbody> ().mass;
+				if (action == Action.Animation) {
+					if(mode==Mode.Hold)
+					{
+						animator.Play ("Reverse");
+					}
+				}
 			}
+
+
 		}
 
 	}
+
+
+
 
 }

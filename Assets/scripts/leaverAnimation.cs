@@ -20,9 +20,15 @@ public class leaverAnimation : MonoBehaviour {
 	{
         
 		if (other.tag.Equals ("Player")) {
-			baseAnimation.enabled = true;
+	
 			if (p) {
-				baseAnimation.Play ("onLever", -1, 0f);
+			//	baseAnimation.Play ("onLever", -1, 0f);
+				baseAnimation.enabled = true;
+				if (baseAnimation.isInitialized) {
+					Debug.Log ("reinding");
+					baseAnimation.Rebind ();
+				}
+
 			} else {
 				baseAnimation.Play ("OnleverReverse", -1, 0f);
 			}

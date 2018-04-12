@@ -13,7 +13,9 @@ public class ActionerEditor : Editor {
 	toChange_prop,
 	requiredMass_prop,
 	id_prop,
-	kind_prop;
+	kind_prop,
+	mode_prop;
+
 
 	void OnEnable()
 	{
@@ -23,6 +25,7 @@ public class ActionerEditor : Editor {
 		id_prop=serializedObject.FindProperty ("id");
 		toChange_prop = serializedObject.FindProperty ("toChange");
 		kind_prop = serializedObject.FindProperty ("kind");
+		mode_prop = serializedObject.FindProperty ("mode");
 
 	}
 	override public void OnInspectorGUI(){
@@ -49,6 +52,8 @@ public class ActionerEditor : Editor {
 
 		case Accioner.Action.Animation:
 			EditorGUILayout.PropertyField (animator_prop);
+			EditorGUILayout.PropertyField (mode_prop);
+			Accioner.Mode m = (Accioner.Mode)mode_prop.enumValueIndex;
 			break;
 
 		case Accioner.Action.Bool:
