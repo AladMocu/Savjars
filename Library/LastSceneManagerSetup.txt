@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Min Scene.unity
+- path: Assets/Levels/level_user/MyLevel_user.unity
   isLoaded: 1
   isActive: 1
